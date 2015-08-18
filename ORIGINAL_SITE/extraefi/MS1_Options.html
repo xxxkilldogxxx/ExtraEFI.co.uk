@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.oneColElsCtr #container {
+	width: 46em;
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+.style3 {font-size: small; font-weight: bold; }
+.style4 {font-size: small; }
+-->
+</style></head>
+
+<body class="oneColElsCtr">
+
+<div id="container">
+  <div id="mainContent">
+    <p align="center"><b><font size="4" color="#000000">Note: Two functions 
+      in the same row can NOT be used together!<br />
+      <font size="2">e.g. NOS and Water Injection as they are not used 
+    in another pad, etc</font></font></b></p>
+    <table width="100%" border="1" bgcolor="#CCCCCC">
+      <tr>
+        <td height="21" width="7%"><div align="center" class="style3"><font color="#000000">Pin</font></div></td>
+        <td height="21" width="46%"><div align="center" class="style3"><font color="#000000">Function A</font></div></td>
+        <td height="21" width="47%"><div align="center" class="style3"><font color="#000000">Function B</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style3"><font color="#000000">JS0</font></div></td>
+        <td width="46%"><div align="center" class="style4"><font color="#006666">Cooling Fan Relay</font></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#9900FF">Water Injection <i>Water 
+        Pump Relay</i></font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">JS1</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><font color="#990066">NOS Relay Output</font></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#9900FF">Water Injection PWM 
+        Output <i>Water Valve </i></font><font color="#000000"><b><font color="#FF0000">&iexcl;</font></b></font></div></td>
+      </tr>
+      <tr>
+        <td width="7%" height="2"><div align="center" class="style4"><b><font color="#000000">JS2</font></b></div></td>
+        <td width="46%" height="2"><div align="center" class="style4"><font color="#FF00FF">Programmable Output 
+        1 </font></div></td>
+        <td width="47%" height="2"><div align="center" class="style4"><font color="#999999"><b><font color="#666666">Boost 
+        Controller PWM Output</font></b></font> <font color="#000000"><b><font color="#FF0000">&iexcl;</font></b></font></div></td>
+      </tr>
+      <tr>
+        <td width="7%" height="2"><div align="center" class="style4"><b><font color="#000000">JS3</font></b></div></td>
+        <td width="46%" height="2"><div align="center" class="style4"><font color="#FF00FF">Programmable Output 
+        2</font></div></td>
+        <td width="47%" height="2"><div align="center" class="style4"><font color="#FF0000">Tacho output</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">JS5</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><font color="#00FF33"><b><font color="#0000FF">Constant 
+        Barometric Correction</font></b></font></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#666666">Second O2 sensor</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">JS7</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><b><font color="#000000">Spark E <br />
+        (5 COP - 10 and over wasted spark setups)</font></b></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#000000">...</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">JS8</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><font color="#333399"><b>Second Trigger 
+        Input</b></font></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#000000">...</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">JS9</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><font color="#990066">NOS Input (To switch 
+        tables or retard ignition)</font></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#00CC99"><b>Switch VE and or 
+        Ignition map Tables</b></font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">JS10</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><b><font color="#000000">Spark F <br />
+        (12cy wasted spark setups)</font></b></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#000000">Knock Input</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">JS11</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><font color="#0000FF">Launch Control input</font></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#000000">...</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">D14</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><b><font color="#000000">Spark A <br />
+        (Used for vertually all ignition setups)</font></b></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#000000">...</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">D15</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><b><font color="#000000">Spark C <br />
+        (6cy and over wasted spark setups) </font></b></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#FF00FF">Programmable Output 
+          4 </font><font color="#006666"><br />
+        (Cooling Fan Relay)</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%"><div align="center" class="style4"><b><font color="#000000">D16</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><b><font color="#000000">Spark B <br />
+        (4cy and over wasted spark setups)</font></b></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#FF00FF">...</font></div></td>
+      </tr>
+      <tr>
+        <td width="7%" height="58"><div align="center" class="style4"><b><font color="#000000">R1</font></b></div></td>
+        <td width="46%"><div align="center" class="style4"><b><font color="#000000">Spark D <br />
+        (8cy and over wasted spark setups) </font></b></div></td>
+        <td width="47%"><div align="center" class="style4"><font color="#FF00FF">Programmable Output 
+        3</font></div></td>
+      </tr>
+    </table>
+    <p align="center"><font color="#000000"><b><font color="#FF0000" size="4">&iexcl;</font></b><font size="2"> Not recommended to use these together. <br />
+      Note: Most outputs can be set for Tacho, ExtraEFI.co.uk uses JS3 
+      if available.</font></font>
+      <!-- end #mainContent -->
+    </p>
+  </div>
+<!-- end #container --></div>
+</body>
+</html>

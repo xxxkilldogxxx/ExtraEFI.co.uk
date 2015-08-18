@@ -1,0 +1,203 @@
+html {
+	height : 100%;
+}
+
+body {
+  	height : 100%;
+	padding : 0;
+	margin : 0;
+	background-size: 10%;
+}
+
+a:hover {
+	color : #fff;
+}
+
+h1 {
+	font-size: 30px;
+	text-align : center;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+	padding : 15px;
+	margin: 0;
+	color: black;
+}
+
+h3 {
+	font-size: 19px;
+	color: #ccc;
+	text-align: center;
+	font-style: italic;
+	padding : 15px;
+}
+
+p {
+	padding : 15px;
+	margin: 0;
+	text-align: center;
+	color : #000;
+	font-weight: normal;
+	font-size : 16px;
+}
+
+b {
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-position: inside;
+	color : #000;
+	list-style-type:square;
+	margin: 10px;
+}
+
+hr {
+	border-top: 1px solid black;
+	border-bottom: 0;
+}
+
+span.color-yellow {
+	color : yellow;
+}
+
+span.color-red {
+	color: red;
+}
+
+.center {
+	text-align: center;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+#page-wrapper {
+	width : 1200px;
+	margin : 0 auto;
+}
+
+#MenuBarHorizontal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width : 100%;
+}
+
+#email-border {
+	background: #c7e5fa;
+	border: 2px solid #000;
+	color: #fff;
+	margin: 0 0 20px 0;
+	padding: 0;
+	line-height: 20px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#email-border p {
+	color: #000;
+}
+
+#email-border a:hover {
+	color: #0000ff;
+}
+
+#main-border-one,
+#main-border-two {
+	background: #999;
+	border: 2px solid #000;
+	color: #000;
+	margin-bottom: 20px;
+	width: 47%;
+	height : 100px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	border-radius : 10px;
+	-moz-border-radius: 10px;
+}
+
+table#ecu-pricing,
+table#ecu-description,
+table.ms1-option-table,
+table.ms2and3-option-table {
+	background : #fff;
+	text-align: center;
+	width : 100%;
+	border-collapse:collapse;
+}
+
+table a:hover {
+	color: #0000ff;
+}
+
+#ecu-pricing th,
+#ecu-description th {
+	padding : 7px;
+	border: 1px solid black;
+	font-size : 19px;
+}
+
+#ecu-pricing td:first-child,
+#ecu-description td:first-child {
+	border-left: 1px solid black;
+}
+
+#ecu-pricing td,
+#ecu-description td,
+.ms1-option-table td,
+.ms2and3-option-table td {
+	padding : 9px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#ecu-pricing tr:nth-child(even),
+#ecu-description tr:nth-child(even),
+.ms1-option-table tr:nth-child(even),
+.ms2and3-option-table tr:nth-child(even) {
+	background : #bbb;
+}
+
+#ecu-pricing td.price-box,
+#ecu-description td.grey-box {
+	background : #666; 
+	color : #fff;
+}
+
+#google-widget {
+	margin : 0 auto;
+	width : 30%;
+}
+
+#important-info {
+	background: #888;
+}
+
+#footer span,
+#footer a,
+#footer {
+	color: #fff;
+}
+
+#footer a:hover {
+	color: #0000ff;
+}

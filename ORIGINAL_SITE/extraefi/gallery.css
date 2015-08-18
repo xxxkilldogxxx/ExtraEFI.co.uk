@@ -1,0 +1,18 @@
+body {
+	background-color: black;
+	text-align: center;
+}
+h1, h3 {
+	color: white;
+	font-family: sans-serif;
+}
+img {
+	border: solid 1px gray;
+}
+img:hover {
+	border: solid 1px white;
+	/* doesn't work in ie */
+}
+a {
+	text-decoration: none;
+}
