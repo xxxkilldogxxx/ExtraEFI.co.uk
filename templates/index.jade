@@ -1,0 +1,89 @@
+extends ./layouts/default
+
+block content
+
+  .container
+    .bg-white.wrapper.m-t-xl.m-b-xl
+      h3 Welcome to the ExtraEFI website!
+      hr
+      p I have been building MegaSquirt ECU's since 2003 and I'm one of the team who wrote the MS-Extra Code.
+      p So you can  rest assured this is THE place to purchase your MS ECU, with the knowledge that you will be getting what you need, rather than what someone wants to sell you.
+      img.img-responsive.m-l-md.m-none-xs.pull-right(width='400', src='assets/img/Package.jpg')
+      p No other MegaSquirt sales website comes close to this one for information, knowledge and backup of MS ECUs!
+      p Everything you need to know is on this site, that includes 
+        a(href='video.html') video help files          | ! If you still have any questions then I can answer them due to my experience with the actual firmware the ECU's run and with the years of experience I have building, tuning and testing them!
+      p ExtraEFI was setup in 2005 with a simple aim; to supply fully assembled, tested and warranted MegaSquirt ECU's to a very high standard.
+      p All my ECUs run the latest version of the MS Extra code. 
+        em
+          | Well, they would do, as I'm one of the authors of the MS-Extra code and author of the MS1-Extra
+          | and MS2-Extra manuals.
+      p MegaSquirt is a standalone DIY mappable Engine Management System that can control the fuel and spark or fuel only or spark only on virtually any liquid fueled spark-ignition engine, naturally aspirated or boosted.
+      p Are you still confused about MegaSquirt? Click 
+        a(href='information_OL.htm') here
+      p.font-bold A MegaSquirt ECU can give you mappable fuel and or mappable ignition using:
+      ul
+        li A distributor setup with a simple hall sensor/points in the distributor or a cam/crank signal.
+        li A coil pack setup using a variety of cam/crank signals.
+        li A Coil On Plug setup using a variety of cam/crank signals.
+      p.font-bold All of the ECU's I sell have the MS-Extra code loaded into them, these are the features that come as standard:
+    .row
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          h4.m-none.text-black 16x16 Fuel table
+        .bg-white.b-t.wrapper
+          p.font-thin.m-none Info Text
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          | 12x12 Spark table
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          | Rev limiter
+    .row
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          | Overboost protection
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          | Mappable Air Fuel Ratio targets
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          | Wide Band or Narrow Band
+    .row.flex-row
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          h4.m-none Ignition Timing Advancement
+        .bg-white.b-t.wrapper
+          p.font-thin.m-none Based on your vehicles Coolant temperature
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          h4.m-none Ignition Timing Retard
+          | Based on the Inlet Air temperature
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          h4.m-none Acceleration Enrichment
+          | Based on Manifold Absolute Pressure rate of change or Throttle Position Sensor rate of change
+    .row
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper           | Overrun fuel cut
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper          | Hybrid Alpha-N
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper          | Staged Injection
+    .row
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper          | Built-in Air Density Correction
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper          | PWM Idle Control valves
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper          | Stepper Motor Idle Control Valves
+    .row
+      .col-md-4.m-t-sm.m-b-sm
+        .bg-white.wrapper
+          | Fuel and Ignition or Fuel Only or Ignition Only
+
+    footer.bg-white.m-t-xl.wrapper.m-b-xl
+      p.m-none Copyright &copy; 
+        a(href='#') ExtraEFI.co.uk          |  2015 
+        span.pull-right
+          a(href='terms_of_use.html') Terms of Use
+          |  - Design by Sam Buckingham &amp; Joshua Baldwin

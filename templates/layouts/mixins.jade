@@ -1,0 +1,47 @@
+mixin indexHeader()
+  nav.navbar.navbar-inverse.navbar-straight(role='navigation')
+    .container-fluid
+      .w-auto-xs
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#collapsed-nav')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.pull-left(href='/')
+          img.h.m-t-sm.m-b-sm(src='assets/img/extraefi_logo.png')
+      #collapsed-nav.collapse.navbar-collapse.navbar-right
+        ul.nav.navbar-nav
+          li
+            a(href='#') Home
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              | Products 
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href='megasquirt_ecus.html') Megasquirt ECU's
+              li
+                a(href='RV8_kits.html') Rover V8 ECU bundles/PNP
+              li
+                a(href='MX5_ecus.html') Mazda MX5 ECU's 
+              li
+                a(href='accessories.html') Accessories
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              | Services 
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href='services.html') Installation & Tuning
+              li
+                a(href='services.html') Megasquirt upgrades/repairs
+          li
+            a(href='gallery.html') Gallery
+          li
+            a(href='feedback.html') Feedback
+          li
+            a(href='support.html') Support
+          li
+            a(href='links.html') Links
+          li
+            a(href='mailto:phil@extraefi.co.uk') Contact
