@@ -1,376 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
+<html lang="en" class="bg-light">
+  <head>
+    <base href="#">
+    <title>ExtraEFI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/favicon.png" sizes="16x16 32x32 48x48 64x64" type="image/png">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Half Slider - Start Bootstrap Template</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/half-slider.css" rel="stylesheet">
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-</head>
-
-<body data-spy="scroll" data-target="#sidebar">
-
-<div class="container">
-    <header>
-        <div class="header-logo">
-        </div>
-    </header>
-
-    <nav class="navbar navbar-inverse navbar-straight" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="pull-left" href="/"><img width="180" class="img-responsive" src="img/extraefi_logo.png"></a>
+    <!-- View-specific stylesheets.-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/trendy.css" rel="stylesheet">
+    <link href="assets/css/authy.css" rel="stylesheet">
+    <link href="assets/css/source-sans-pro.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body class="h-full"><a href="mailto:phil@extraefi.co.uk">
+      <div class="w-full m-t-md m-b-md text-center hidden-xs hidden">
+        <h4 class="m-none hidden"> Click here to email me if you have any questions</h4>
+      </div></a>
+    <div class="w-full bg-dark m-t-xxl">
+      <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse navbar-straight">
+          <div class="container-fluid">
+            <div class="w-auto-xs">
+              <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="pull-left"><img src="assets/img/new_logo.svg" style="margin:25px 10px;" class="h-sm"/></a>
             </div>
-            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/extraefi/megasquirt_ecus.html">Megasquirt ECU's</a></li>
-                            <li><a href="/extraefi/RV8_kits.html">Rover V8 ECU bundles/PNP</a></li>
-                            <li><a href="/extraefi/MX5_ecus.html">Mazda MX5 ECU's </a></li>
-                            <li><a href="/extraefi/accessories.html">Accessories</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/extraefi/services.html">Installation & Tuning</a></li>
-                            <li><a href="/extraefi/services.html">Megasquirt upgrades/repairs</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/extraefi/gallery.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="/extraefi/feedback.html">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="/extraefi/support.html">Support</a>
-                    </li>
-                    <li>
-                        <a href="/extraefi/links.html">Links</a>
-                    </li>
-                    <li>
-                        <a href="/extraefi/contact.html">Contact</a>
-                    </li>
-                </ul>
+            <div id="collapsed-nav" class="collapse navbar-collapse navbar-right">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Products <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="megasquirt_ecus.html">Megasquirt ECU's</a></li>
+                    <li><a href="RV8_kits.html">Rover V8 ECU bundles/PNP</a></li>
+                    <li><a href="MX5_ecus.html">Mazda MX5 ECU's </a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                  </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Support <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="support.html">FAQs</a></li>
+                    <li><a href="services.html">Videos</a></li>
+                    <li><a href="files.html">Downloads</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="links.html">Links</a></li>
+              </ul>
             </div>
-        </div>
-    </nav>
-</div>
-
-
-<div class="container">
-    <h3>Megasquirt ECU accessories and upgrades</h3>
-    <hr>
-    <div class="row">
-        <div class="col-lg-3 sidebar">
-            <ul id="sidebar" class="nav nav-stacked" data-spy="affix" data-offset-top="400">
-                <li><a href="#knock">Knock conditioner unit</a></li>
-                <li><a href="#trigger">36-1 Trigger wheels</a></li>
-                <li><a href="#loom">MS1-2-3 main wiring looms</a></li>
-                <li><a href="#sensor">Coolant/Air temperture sensors</a></li>
-                <li><a href="#adapter">USB - RS232 adapter</a></li>
-                <li><a href="#usb">Built-in USB port</a></li>
-                <li><a href="#injector">Bosch injector style plug</a></li>
-                <li><a href="#relay">30A Relay and base with 3 fused outlets</a></li>
-                <li><a href="#stepper">Rover V8 hotwire stepper connector</a></li>
-                <li><a href="#hotwire">Rover V8 hotwire connector & Relay kit</a></li>
-            </ul>
-        </div>
-        <div class="col-lg-9">
-            <div id="knock" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/Knock_Box_Small.jpg">
-
-                    <ul style="padding:10px 0 0 15px;">
-                        <li >Single sensor input unit - £35</li>
-                        <li >Twin sensor input unit - £40</li>
-                    </ul>
-                    <p>Plus £5 postage within the UK or £8 abroad.</p>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>Knock conditioner unit</h4>
-                    <p>
-                        <strong>Features:</strong>
-                        <ul>
-                            <li><strong>1 or 2 Knock Sensor Inputs with Isolated Band Pass Filters</strong> - designed to work within the frequency range of most OEM sensors.</li>
-                            <li><strong>Adjustable Sensitivity</strong> - The conditioner can be adjusted to ensure it triggers at the desired voltage level.</li>
-                            <li><strong>LED Indication</strong> - The case has a built in LED to show when knock has been detected.</li>
-                            <li><strong>MS ECU Compatable Output</strong> - The output is regulated to 5V making it compatable to directly wire to an MS ECU. This can also be used to trigger an external LED (dash board mounted) if needed.</li>
-                        </ul>
-                    </p>
-
-
-                    <p><strong>Please remember that this is not a magic pill, if you have detonation then you have issues you need to address and cure!</strong></p>
-
-                    <p>See <a href="#">here</a> for more details on knock and how to wire the conditioner.</p>
-
-                    <p>Please see the MS2 Tuning website for details on purchasing this product: <a href="#">www.MS2Tuning.com</a></p>
-
-                </div>
-            </div>
-            <hr>
-            <div id="trigger" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/wheels_small.jpg">
-
-                    <ul style="padding:10px 0 0 15px;">
-                        <li >101.5mm diameter - £25</li>
-                        <li >171.5mm diameter - £30</li>
-                        <li >209.5mm diameter - £35</li>
-                        <li >Rover V8/TVR crank pulley including 1 spacer - £55</li>
-
-                    </ul>
-                    <p><strong>Price is when bought with ECU.</strong></p>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>36-1 Trigger wheels</h4>
-                    <p>
-                        Wheels are lazer cut 3mm thick, 12.7mm diameter hole in the center and 8 radial aligning slots.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div id="loom" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/cable_Small.jpg">
-
-                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                        <br>
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="J3MFAMATDC27S">
-                        <br>
-                        <table>
-                            <tbody><tr><td><strong>
-                                <input type="hidden" name="on0" value="Bare Ended Loom Length">
-                                Bare Ended Loom Length</strong></td></tr><tr><td><select name="os0">
-                                <option value="1 Meter Bare Ended">1 Meter Bare Ended £55.00 GBP</option>
-                                <option value="2 Meter Bare Ended">2 Meter Bare Ended £65.00 GBP</option>
-                                <option value="2.5 Meter Bare Ended">2.5 Meter Bare Ended £70.00 GBP</option>
-                            </select> </td></tr>
-                            </tbody></table>
-                        <input type="hidden" name="currency_code" value="GBP">
-                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-                    </form>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>MS1-2-3 main wiring looms</h4>
-                    <p>
-                        <strong>These are included in the ECU package prices, so you do NOT need to order one if you buy an ECU from me.</strong>
-                    </p>
-                    <p>But if you need a wiring loom for your MegaSquirt ECU, then these are supplied with bare ended wires ready for you to wire to your setups connectors.</p>
-                    <p>The looms are approx 1 meter long with a high quality, screened cable for the trigger signal and multiple 0.5mm ground cables for good noise seperation.</p>
-                    <p>Each wire is colour coded and has a label with it's description on it that matches the diagrams I supply, these are also on this site.<p>
-                    <p>As the wiring looms are made to your setup requirements, please contact me with all your details before ordering.</p>
-                </div>
-            </div>
-            <hr>
-            <div id="sensor" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/temp_sensors.jpg">
-
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"><font color="#CCCCCC"><b><font color="#000000"><b><font color="#000000"><b><font color="#000000">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="9PTCC4U3QW8SW">
-                        <table align="center">
-                            <tbody><tr><td><input type="hidden" name="on0" value="Temperature Sensor">
-                                Temperature Sensor</td>
-                            </tr><tr><td><select name="os0">
-                                <option value="Air Temp Sensor">Air Temp Sensor £21.00 GBP</option>
-                                <option value="Coolant Sensor">Coolant Sensor £18.00 GBP</option>
-                                <option value="Air and Coolant Sensor">Air and Coolant Sensor £37.00 GBP</option>
-                            </select> </td></tr>
-                            </tbody></table>
-                        <input type="hidden" name="currency_code" value="GBP">
-                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-
-
-
-                    </font></b></font></b></font></b></font></form>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>Coolant/Air temperture sensors</h4>
-                    <p>
-                        If your engine doesn't have both temperature sensors then it is possible to use a sensor from a scrap yard. But some people like to use the original MegaSquirt sensors as the MS ECU and the tuning software is already setup for these.
-                    </p>
-                    <p>The open style air sensor is ideal for fast changing temperatures from boosted engines. The closed style is ideal for coolant and air temperature sensing in most NA setups. - See more at: http://www.extraefi.co.uk/Misc_products.htm#sthash.dh0OtMyA.dpuf</p>
-                    <p>I can, however, setup your ECU for your sensors or for sensors you have obtained, just supply me with 3 resistances from your sensors (<a href="#">see here</a>)</p>
-                </div>
-            </div>
-            <hr>
-            <div id="adapter" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/usb.jpg">
-
-                    <p>Price: £20</p>
-                    <p>Postage: £3 UK - £4 Abroad</p>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>USB - RS232 adapter</h4>
-                    <p>Having tested lots of these adaptors I have found this type works fine on various laptops, suitable for all MegaSquirt ECU's.</p>
-                    <p>The driver is available here if you need it.</p>
-                    <p>See here on how to setup an RS232 adaptor.</p>
-                    <p><strong>If buying one of these when purchasing an ECU I can slip it in the same box, so no postage cost needed.</strong></p>
-                </div>
-            </div>
-            <hr>
-            <div id="usb" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/USB_In.png">
-
-                    <p>Price: £30</p>
-                    <p><strong>Price is when bought with ECU.</strong></p>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>Built-in USB port</h4>
-                    <p>When ordering an MS1 or MS2 ECU you can now specify it with a built in USB port.</p>
-                    <p>This means no adaptor is needed, compatable with all windows versions, including Windows 7.</p>
-                    <p><a href="#">Driver download here</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="injector" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/Inj_Plug_Small.jpg">
-
-                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="K44DGYVUP4ALJ">
-                        <table>
-                            <tbody><tr><td><input type="hidden" name="on0" value="Quantity"></td>
-                            </tr><tr><td><select name="os0">
-                                <option value="Pack of 4">Pack of 4 £20.00 GBP</option>
-                                <option value="Pack of 6">Pack of 6 £28.00 GBP</option>
-                                <option value="Pack of 8">Pack of 8 £36.00 GBP</option>
-                                <option value="Pack of 9 (RV8)">Pack of 9 (RV8) £39.00 GBP</option>
-                            </select> </td></tr>
-                            </tbody></table>
-                        <input type="hidden" name="currency_code" value="GBP">
-                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>Bosch injector style plug</h4>
-                    <p>This is the standard injector plug used on most vehicles using bosch style injectors as found on Fords, RV8's, etc.</p>
-                    <p>Each item comes with a rubber boot and 2 crimp terminals for the cables, for best results are to solder the wire to the crimps after crimping.</p>
-                    <p><strong>If buying one of these when purchasing an ECU I can slip it in the same box, so no postage cost needed.</strong></p>
-                </div>
-            </div>
-            <hr>
-            <div id="relay" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/Relay_Small.jpg">
-
-                    <p>
-                    <ul class="list-unstyled">
-                        <li><strong>Single sensor input unit</strong> - £35</li>
-                        <li><strong>Twin sensor input unit</strong> - £40</li>
-                        <p>Plus £5 postage within the UK or £8 abroad.</p>
-                    </ul>
-                    </p>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>30A Relay and base with 3 fused outlets</h4>
-                    <p>This is ideal for wiring the power to the idle valve, injectors and or the ignition so that the MS ECU controls when they get power.</p>
-                    <p>Although this is not strictly needed, it can be wired to allow power to come on to the injectors, etc, when the MS see's an RPM.</p>
-                    <p>This means wiring it into the fuel pump output, see <a href="#">HERE for a diagram.</a> With up to 30A of control, it should be able to control most items that the MS needs.</p>
-                </div>
-            </div>
-            <hr>
-            <div id="stepper" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/RV8_IAC_Plug_Small.gif">
-
-                    <p>
-                    <ul class="list-unstyled">
-                        <li><strong>Single sensor input unit</strong> - £35</li>
-                        <li><strong>Twin sensor input unit</strong> - £40</li>
-                        <p>Plus £5 postage within the UK or £8 abroad.</p>
-                    </ul>
-                    </p>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>Rover V8 Hotwire stepper (idle valve) connector</h4>
-                    <p>This is a brand new connector for the RV8 idle valve, as used on all the Hotwire EFI setups.</p>
-                    <p>It has 2" tails all ready to be connected into my ECU's looms.</p>
-                </div>
-            </div>
-            <hr>
-            <div id="hotwire" class="row">
-                <div class="col-lg-4">
-                    <img class="img-responsive img-rounded" src="img/accessories/RV8_Kit.jpg">
-
-                    <p>
-                    <ul class="list-unstyled">
-                        <li><strong>Single sensor input unit</strong> - £35</li>
-                        <li><strong>Twin sensor input unit</strong> - £40</li>
-                        <p>Plus £5 postage within the UK or £8 abroad.</p>
-                    </ul>
-                    </p>
-
-                </div>
-                <div class="col-lg-8">
-                    <h4>Rover V8 Hotwire connector & relay kit</h4>
-                    <p>This is a kit of connectors for the Hotwire RV8 engines.</p>
-                    <p>
-                        <strong>Included:</strong>
-                    <ul>
-                        <li>8 x connectors for the fuel injectors</li>
-                        <li>1 x connector for the coolant sensor</li>
-                        <li>1 x stepper idle valve connector</li>
-                        <li>1 x 30A relay with 3 fused outlets</li>
-                    </ul>
-                    </p>
-                    <p><strong>All pins and rubber boots are supplied with the kit.</strong></p>
-                </div>
-            </div>
-        </div>
+          </div>
+        </nav>
+      </div>
     </div>
-
-    <hr>
-
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer-straight">
-                    <p>Copyright &copy; <a href="#">ExtraEFI.co.uk</a> 2015 <span class="pull-right"><a href="#">Terms of Use</a> - Design by Sam Buckingham</span></p>
-                </div>
-            </div>
+    <div class="container">
+      <div class="bg-white wrapper m-t-xl m-b-xl">
+        <h3>Megasquirt ECU accessories and upgrades</h3>
+        <hr>
+        <div id="knock" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/Knock_Box_Small.jpg" class="w-full r-2x m-b-md">
+            <ul style="padding:10px 0 0 15px;">
+              <li>Single sensor input unit - £35</li>
+              <li>Twin sensor input unit - £40</li>
+            </ul>
+            <p>Plus £5 postage within the UK or £8 abroad.</p>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>Knock conditioner unit</h4>
+            <p><strong>Features:</strong>
+              <ul>
+                <li><strong>1 or 2 Knock Sensor Inputs with Isolated Band Pass Filters</strong> - designed to work within the frequency range of most OEM sensors.</li>
+                <li><strong>Adjustable Sensitivity</strong> - The conditioner can be adjusted to ensure it triggers at the desired voltage level.</li>
+                <li><strong>LED Indication</strong> - The case has a built in LED to show when knock has been detected.</li>
+                <li><strong>MS ECU Compatable Output</strong> - The output is regulated to 5V making it compatable to directly wire to an MS ECU. This can also be used to trigger an external LED (dash board mounted) if needed.</li>
+              </ul>
+            </p>
+            <p><strong>Please remember that this is not a magic pill, if you have detonation then you have issues you need to address and cure!</strong></p>
+            <p>See <a href="#">here</a> for more details on knock and how to wire the conditioner.</p>
+            <p>Please see the MS2 Tuning website for details on purchasing this product: <a href="#">www.MS2Tuning.com</a></p>
+          </div>
         </div>
-    </footer>
-
-</div>
-
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</body>
+        <hr>
+        <div id="trigger" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/wheels_small.jpg" class="w-full r-2x m-b-md">
+            <ul style="padding:10px 0 0 15px;">
+              <li>101.5mm diameter - £25</li>
+              <li>171.5mm diameter - £30</li>
+              <li>209.5mm diameter - £35</li>
+              <li>Rover V8/TVR crank pulley including 1 spacer - £55</li>
+            </ul>
+            <p><strong>Price is when bought with ECU.</strong></p>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>36-1 Trigger wheels</h4>
+            <p>Wheels are lazer cut 3mm thick, 12.7mm diameter hole in the center and 8 radial aligning slots.</p>
+          </div>
+        </div>
+        <hr>
+        <div id="loom" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/cable_Small.jpg" class="w-full r-2x m-b-md">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="J3MFAMATDC27S">
+              <table class="w-full m-b-md">
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="on0" value="Bare Ended Loom Length">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select name="os0" class="w-full form-control">
+                        <option value="1 Meter Bare Ended">1 Meter Bare Ended £55.00 GBP</option>
+                        <option value="2 Meter Bare Ended">2 Meter Bare Ended £65.00 GBP</option>
+                        <option value="2.5 Meter Bare Ended">2.5 Meter Bare Ended £70.00 GBP</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <input type="hidden" name="currency_code" value="GBP">
+              <input type="submit" border="0" name="submit" value="Pay with Paypal" alt="PayPal — The safer, easier way to pay online." class="btn btn-dark w-full">
+            </form>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>MS1-2-3 main wiring looms</h4>
+            <p><strong>These are included in the ECU package prices, so you do NOT need to order one if you buy an ECU from me.</strong></p>
+            <p>But if you need a wiring loom for your MegaSquirt ECU, then these are supplied with bare ended wires ready for you to wire to your setups connectors.</p>
+            <p>The looms are approx 1 meter long with a high quality, screened cable for the trigger signal and multiple 0.5mm ground cables for good noise seperation.</p>
+            <p>Each wire is colour coded and has a label with it's description on it that matches the diagrams I supply, these are also on this site.</p>
+            <p></p>
+            <p>As the wiring looms are made to your setup requirements, please contact me with all your details before ordering.</p>
+          </div>
+        </div>
+        <hr>
+        <div id="sensor" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/temp_sensors.jpg" class="w-full r-2x m-b-md">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post"><font color="#000000">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="9PTCC4U3QW8SW">
+                <table class="w-full m-b-md">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input type="hidden" name="on0" value="Temperature Sensor">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select name="os0" class="w-full form-control">
+                          <option value="Air Temp Sensor">Air Temp Sensor £21.00 GBP</option>
+                          <option value="Coolant Sensor">Coolant Sensor £18.00 GBP</option>
+                          <option value="Air and Coolant Sensor">Air and Coolant Sensor £37.00 GBP</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <input type="hidden" name="currency_code" value="GBP">
+                <input type="submit" border="0" name="submit" value="Pay with Paypal" alt="PayPal — The safer, easier way to pay online." class="btn btn-dark w-full"></font></form>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>Coolant/Air temperture sensors</h4>
+            <p>If your engine doesn't have both temperature sensors then it is possible to use a sensor from a scrap yard. But some people like to use the original MegaSquirt sensors as the MS ECU and the tuning software is already setup for these.</p>
+            <p>The open style air sensor is ideal for fast changing temperatures from boosted engines. The closed style is ideal for coolant and air temperature sensing in most NA setups.</p>
+          </div>
+        </div>
+        <hr>
+        <div id="adapter" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/usb.jpg" class="w-full r-2x m-b-md">
+            <p>Price: £20</p>
+            <p>Postage: £3 UK - £4 Abroad</p>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>USB - RS232 adapter</h4>
+            <p>Having tested lots of these adaptors I have found this type works fine on various laptops, suitable for all MegaSquirt ECU's.</p>
+            <p>The driver is available here if you need it.</p>
+            <p>See here on how to setup an RS232 adaptor.</p>
+            <p><strong>If buying one of these when purchasing an ECU I can slip it in the same box, so no postage cost needed.</strong></p>
+          </div>
+        </div>
+        <hr>
+        <div id="usb" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/USB_In.png" class="w-full r-2x m-b-md">
+            <p>Price: £30</p>
+            <p><strong>Price is when bought with ECU.</strong></p>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>Built-in USB port</h4>
+            <p>When ordering an MS1 or MS2 ECU you can now specify it with a built in USB port.</p>
+            <p>This means no adaptor is needed, compatable with all windows versions, including Windows 7.</p>
+            <p><a href="#">Driver download here</a></p>
+          </div>
+        </div>
+        <hr>
+        <div id="injector" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/Inj_Plug_Small.jpg" class="w-full r-2x m-b-md">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="K44DGYVUP4ALJ">
+              <table class="w-full m-b-md">
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="on0" value="Quantity">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select name="os0" class="w-full form-control">
+                        <option value="Pack of 4">Pack of 4 £20.00 GBP</option>
+                        <option value="Pack of 6">Pack of 6 £28.00 GBP</option>
+                        <option value="Pack of 8">Pack of 8 £36.00 GBP</option>
+                        <option value="Pack of 9 (RV8)">Pack of 9 (RV8) £39.00 GBP</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <input type="hidden" name="currency_code" value="GBP">
+              <input type="submit" border="0" name="submit" value="Pay with Paypal" alt="PayPal — The safer, easier way to pay online." class="btn btn-dark w-full"><img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>Bosch injector style plug</h4>
+            <p>This is the standard injector plug used on most vehicles using bosch style injectors as found on Fords, RV8's, etc.</p>
+            <p>Each item comes with a rubber boot and 2 crimp terminals for the cables, for best results are to solder the wire to the crimps after crimping.</p>
+            <p><strong>If buying one of these when purchasing an ECU I can slip it in the same box, so no postage cost needed.</strong></p>
+          </div>
+        </div>
+        <hr>
+        <div id="relay" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/Relay_Small.jpg" class="w-full r-2x m-b-md">
+            <p>
+              <ul class="list-unstyled">
+                <li><strong>Single sensor input unit</strong> - £35</li>
+                <li><strong>Twin sensor input unit</strong> - £40</li>
+                <p>Plus £5 postage within the UK or £8 abroad.</p>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>30A Relay and base with 3 fused outlets</h4>
+            <p>This is ideal for wiring the power to the idle valve, injectors and or the ignition so that the MS ECU controls when they get power.</p>
+            <p>Although this is not strictly needed, it can be wired to allow power to come on to the injectors, etc, when the MS see's an RPM.</p>
+            <p>This means wiring it into the fuel pump output, see <a href="#">HERE for a diagram.</a> With up to 30A of control, it should be able to control most items that the MS needs.</p>
+          </div>
+        </div>
+        <hr>
+        <div id="stepper" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/RV8_IAC_Plug_Small.gif" class="w-full r-2x m-b-md">
+            <p>
+              <ul class="list-unstyled">
+                <li><strong>Single sensor input unit</strong> - £35</li>
+                <li><strong>Twin sensor input unit</strong> - £40</li>
+                <p>Plus £5 postage within the UK or £8 abroad.</p>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>Rover V8 Hotwire stepper (idle valve) connector</h4>
+            <p>This is a brand new connector for the RV8 idle valve, as used on all the Hotwire EFI setups.</p>
+            <p>It has 2" tails all ready to be connected into my ECU's looms.</p>
+          </div>
+        </div>
+        <hr>
+        <div id="hotwire" class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12"><img src="assets/img/accessories/RV8_Kit.jpg" class="w-full r-2x m-b-md">
+            <p>
+              <ul class="list-unstyled">
+                <li><strong>Single sensor input unit</strong> - £35</li>
+                <li><strong>Twin sensor input unit</strong> - £40</li>
+                <p>Plus £5 postage within the UK or £8 abroad.</p>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <h4>Rover V8 Hotwire connector & relay kit</h4>
+            <p>This is a kit of connectors for the Hotwire RV8 engines.</p>
+            <p><strong>Included:</strong>
+              <ul>
+                <li>8 x connectors for the fuel injectors</li>
+                <li>1 x connector for the coolant sensor</li>
+                <li>1 x stepper idle valve connector</li>
+                <li>1 x 30A relay with 3 fused outlets</li>
+              </ul>
+            </p>
+            <p><strong>All pins and rubber boots are supplied with the kit.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="bg-white m-t-xl wrapper m-b-xl">
+        <p class="m-none">Copyright &copy; <a href="#">ExtraEFI.co.uk          |  2015 </a><span class="pull-right"><a href="terms_of_use.html">Terms of Use</a> - Design by Sam Buckingham &amp; Joshua Baldwin</span></p>
+      </footer>
+    </div>
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+  </body>
 </html>

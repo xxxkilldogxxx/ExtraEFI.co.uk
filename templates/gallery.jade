@@ -1,0 +1,152 @@
+extends ./layouts/default
+
+block content
+  .container
+    .bg-white.wrapper.m-t-xl.m-b-xl
+      h3 Gallery
+      hr
+      .row.m-t-md.gallery
+        .col-lg-12
+          // The Bootstrap Image Gallery lightbox, should be a child element of the document body
+          #blueimp-gallery.blueimp-gallery(data-use-bootstrap-modal='false')
+            // The container for the modal slides
+            .slides
+            // Controls for the borderless lightbox
+            h3.title
+            a.prev ‹
+            a.next ›
+            a.close ×
+            a.play-pause
+            ol.indicator
+            // The modal dialog, which will be used to wrap the lightbox content
+            .modal.fade
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type='button', aria-hidden='true') ×
+                    h4.modal-title
+                  .modal-body.next
+                  .modal-footer
+                    button.btn.btn-default.pull-left.prev(type='button')
+                      i.fa.fa-chevron-right
+                      |                                     Previous
+                    button.btn.btn-primary.next(type='button')
+                      | Next
+                      i.fa.fa-chevron-right
+          h3 ExtraEFI Megasquirt ECU
+          hr
+          .row.m-t-md
+            .col-lg-3
+              a(href='assets/img/gallery/ExtraEFI_ecus/ECU_Inside1.jpg', title='Extra EFI Megasquirt ECU outside front view.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/ExtraEFI_ecus/ECU_Inside1.jpg', alt='ECU_1')
+            .col-lg-3
+              a(href='assets/img/gallery/ExtraEFI_ecus/ECU_Inside2.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/ExtraEFI_ecus/ECU_Inside2.jpg', alt='ECU_2')
+            .col-lg-3
+              a(href='assets/img/gallery/ExtraEFI_ecus/ECU_Inside3.jpg', title='Extra EFI Megasquirt ECU inside view only.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/ExtraEFI_ecus/ECU_Inside3.jpg', alt='ECU_3')
+            .col-lg-3
+              a(href='assets/img/gallery/ExtraEFI_ecus/ECU_Inside4.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/ExtraEFI_ecus/ECU_Inside4.jpg', alt='Orange')
+          h3 Customers cars
+          hr
+          .row.m-t-md
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/VW_Caddy.jpg', title='Extra EFI Megasquirt ECU outside front view.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/VW_Caddy.jpg', alt='ECU_1')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/VOLVO_1.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/VOLVO_1.jpg', alt='ECU_2')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/BMW.jpg', title='Extra EFI Megasquirt ECU inside view only.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/BMW.jpg', alt='ECU_3')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/BMW_2.JPG', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/BMW_2.JPG', alt='Orange')
+          .row.m-t-md
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/TVR_PnP_Yellow.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/TVR_PnP_Yellow.jpg', alt='Orange')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/wedge.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/wedge.jpg', alt='Orange')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/NOS_TVR.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/NOS_TVR.jpg', alt='Orange')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/500engine.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/500engine.jpg', alt='Orange')
+          .row.m-t-md
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/Forrestburn%20Hillclimb%20small.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/Forrestburn%20Hillclimb%20small.jpg', alt='Orange')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/tong%20006.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/tong%20006.jpg', alt='Orange')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/tong%20009.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/tong%20009.jpg', alt='Orange')
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/White_turbo_MX5.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/White_turbo_MX5.jpg', alt='Orange')
+          .row.m-t-md
+            .col-lg-3
+              a(href='assets/img/gallery/Customer_cars/White_turbo_MX5_engine.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/Customer_cars/White_turbo_MX5_engine.jpg', alt='Orange')
+          h3 Suzuki GSXR600 Throttle Bodies on 5.0L TVR (RV8) engined Cobra replica
+          hr
+          .row.m-t-md.gallery
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle.jpg', title='Extra EFI Megasquirt ECU outside front view.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle.jpg', alt='ECU_1')
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle1.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle1.jpg', alt='ECU_2')
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle2.jpg', title='Extra EFI Megasquirt ECU inside view only.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle2.jpg', alt='ECU_3')
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle3.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle3.jpg', alt='Orange')
+          .row.m-t-md
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle4.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_GSXR600_ITB/Throttle4.jpg', alt='Orange')
+          h3 Siamesed plenum on the 5.0L TVR (RV8) Cobra replica
+          hr
+          .row.m-t-md.gallery
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_plenum/itb10.jpg', title='Extra EFI Megasquirt ECU outside front view.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_plenum/itb10.jpg', alt='ECU_1')
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_plenum/itb9.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_plenum/itb9.jpg', alt='ECU_2')
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_plenum/Pic166.jpg', title='Extra EFI Megasquirt ECU inside view only.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_plenum/Pic166.jpg', alt='ECU_3')
+            .col-lg-3
+              a(href='assets/img/gallery/RV8_TVR_plenum/Pic168.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/RV8_TVR_plenum/Pic168.jpg', alt='Orange')
+          h3
+            | Sequentially fired COP's and Sequential Fuel on the 5.0L TVR (RV8) Cobra replica using MS3
+          hr
+          .row.m-t-md.gallery
+            .col-lg-3
+              a(href='assets/img/gallery/COP_&_Injectors_Seq/COPS_1.jpg', title='Extra EFI Megasquirt ECU outside front view.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/COP_&_Injectors_Seq/COPS_1.jpg', alt='ECU_1')
+            .col-lg-3
+              a(href='assets/img/gallery/COP_&_Injectors_Seq/COPS_2.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/COP_&_Injectors_Seq/COPS_2.jpg', alt='ECU_2')
+            .col-lg-3
+              a(href='assets/img/gallery/COP_&_Injectors_Seq/COPs_3.jpg', title='Extra EFI Megasquirt ECU inside view only.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/COP_&_Injectors_Seq/COPs_3.jpg', alt='ECU_3')
+            .col-lg-3
+              a(href='assets/img/gallery/COP_&_Injectors_Seq/COPS_4.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/COP_&_Injectors_Seq/COPS_4.jpg', alt='Orange')
+          .row.m-t-md
+            .col-lg-3
+              a(href='assets/img/gallery/COP_&_Injectors_Seq/COPs_5.jpg', title='Extra EFI Megasquirt ECU inside view only.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/COP_&_Injectors_Seq/COPs_5.jpg', alt='ECU_3')
+            .col-lg-3
+              a(href='assets/img/gallery/COP_&_Injectors_Seq/COPS_6.jpg', title='Extra EFI Megasquirt ECU inside view plus case.', data-gallery='')
+                img.img-responsive(src='assets/img/gallery/COP_&_Injectors_Seq/COPS_6.jpg', alt='Orange')

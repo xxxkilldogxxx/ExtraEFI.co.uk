@@ -31,7 +31,14 @@ html(lang='en').bg-light
     block content
 
     block foot
-    // Javascript at the bottom for Speed
+      .container
+        footer.bg-white.m-t-xl.wrapper.m-b-xl
+          p.m-none Copyright &copy; 
+            a(href='#') ExtraEFI.co.uk          |  2015 
+            span.pull-right
+              a(href='terms_of_use.html') Terms of Use
+              |  - Design by Sam Buckingham &amp; Joshua Baldwin
+
     block scripts
       script(src='assets/js/jquery.min.js', type='text/javascript')
       script(src='assets/js/bootstrap.min.js', type='text/javascript')

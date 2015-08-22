@@ -1,0 +1,245 @@
+extends ./layouts/default
+
+block content
+  .container
+    .bg-white.wrapper.m-t-xl.m-b-xl
+
+      h3 Megasquirt ECU accessories and upgrades
+      hr
+
+      #knock.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/Knock_Box_Small.jpg').m-b-md
+          ul(style='padding:10px 0 0 15px;')
+            li Single sensor input unit - £35
+            li Twin sensor input unit - £40
+          p Plus £5 postage within the UK or £8 abroad.
+        .col-md-9.col-sm-6.col-xs-12
+          h4 Knock conditioner unit
+          p
+            strong Features:
+            ul
+              li
+                strong 1 or 2 Knock Sensor Inputs with Isolated Band Pass Filters
+                |  - designed to work within the frequency range of most OEM sensors.
+              li
+                strong Adjustable Sensitivity
+                |  - The conditioner can be adjusted to ensure it triggers at the desired voltage level.
+              li
+                strong LED Indication
+                |  - The case has a built in LED to show when knock has been detected.
+              li
+                strong MS ECU Compatable Output
+                |  - The output is regulated to 5V making it compatable to directly wire to an MS ECU. This can also be used to trigger an external LED (dash board mounted) if needed.
+          p
+            strong
+              | Please remember that this is not a magic pill, if you have detonation then you have issues you need to address and cure!
+          p
+            | See 
+            a(href='#') here
+            |  for more details on knock and how to wire the conditioner.
+          p
+            | Please see the MS2 Tuning website for details on purchasing this product: 
+            a(href='#') www.MS2Tuning.com
+      hr
+      #trigger.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/wheels_small.jpg').m-b-md
+          ul(style='padding:10px 0 0 15px;')
+            li 101.5mm diameter - £25
+            li 171.5mm diameter - £30
+            li 209.5mm diameter - £35
+            li Rover V8/TVR crank pulley including 1 spacer - £55
+          p
+            strong Price is when bought with ECU.
+        .col-md-9.col-sm-6.col-xs-12
+          h4 36-1 Trigger wheels
+          p
+            | Wheels are lazer cut 3mm thick, 12.7mm diameter hole in the center and 8 radial aligning slots.
+      hr
+      #loom.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/cable_Small.jpg').m-b-md
+          form(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
+            input(type='hidden', name='cmd', value='_s-xclick')
+            input(type='hidden', name='hosted_button_id', value='J3MFAMATDC27S')
+            table.w-full.m-b-md
+              tbody
+                tr
+                  td
+                    input(type='hidden', name='on0', value='Bare Ended Loom Length')
+                tr
+                  td
+                    select(name='os0').w-full.form-control
+                      option(value='1 Meter Bare Ended') 1 Meter Bare Ended £55.00 GBP
+                      option(value='2 Meter Bare Ended') 2 Meter Bare Ended £65.00 GBP
+                      option(value='2.5 Meter Bare Ended') 2.5 Meter Bare Ended £70.00 GBP
+            input(type='hidden', name='currency_code', value='GBP')
+            input(type='submit', border='0', name='submit', value='Pay with Paypal', alt='PayPal — The safer, easier way to pay online.').btn.btn-dark.w-full
+        .col-md-9.col-sm-6.col-xs-12
+          h4 MS1-2-3 main wiring looms
+          p
+            strong
+              | These are included in the ECU package prices, so you do NOT need to order one if you buy an ECU from me.
+          p
+            | But if you need a wiring loom for your MegaSquirt ECU, then these are supplied with bare ended wires ready for you to wire to your setups connectors.
+          p
+            | The looms are approx 1 meter long with a high quality, screened cable for the trigger signal and multiple 0.5mm ground cables for good noise seperation.
+          p
+            | Each wire is colour coded and has a label with it's description on it that matches the diagrams I supply, these are also on this site.
+          p
+          p
+            | As the wiring looms are made to your setup requirements, please contact me with all your details before ordering.
+      hr
+      #sensor.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/temp_sensors.jpg').m-b-md
+          form(action='https://www.paypal.com/cgi-bin/webscr', method='post')
+            font(color='#000000')
+              input(type='hidden', name='cmd', value='_s-xclick')
+              input(type='hidden', name='hosted_button_id', value='9PTCC4U3QW8SW')
+              table.w-full.m-b-md
+                tbody
+                  tr
+                    td
+                      input(type='hidden', name='on0', value='Temperature Sensor')
+                  tr
+                    td
+                      select(name='os0').w-full.form-control
+                        option(value='Air Temp Sensor') Air Temp Sensor £21.00 GBP
+                        option(value='Coolant Sensor') Coolant Sensor £18.00 GBP
+                        option(value='Air and Coolant Sensor') Air and Coolant Sensor £37.00 GBP
+              input(type='hidden', name='currency_code', value='GBP')
+              input(type='submit', border='0', name='submit', value='Pay with Paypal', alt='PayPal — The safer, easier way to pay online.').btn.btn-dark.w-full
+        .col-md-9.col-sm-6.col-xs-12
+          h4 Coolant/Air temperture sensors
+          p
+            | If your engine doesn't have both temperature sensors then it is possible to use a sensor from a scrap yard. But some people like to use the original MegaSquirt sensors as the MS ECU and the tuning software is already setup for these.
+          p
+            | The open style air sensor is ideal for fast changing temperatures from boosted engines. The closed style is ideal for coolant and air temperature sensing in most NA setups.
+      hr
+      #adapter.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/usb.jpg').m-b-md
+          p Price: £20
+          p Postage: £3 UK - £4 Abroad
+        .col-md-9.col-sm-6.col-xs-12
+          h4 USB - RS232 adapter
+          p
+            | Having tested lots of these adaptors I have found this type works fine on various laptops, suitable for all MegaSquirt ECU's.
+          p The driver is available here if you need it.
+          p See here on how to setup an RS232 adaptor.
+          p
+            strong
+              | If buying one of these when purchasing an ECU I can slip it in the same box, so no postage cost needed.
+      hr
+      #usb.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/USB_In.png').m-b-md
+          p Price: £30
+          p
+            strong Price is when bought with ECU.
+        .col-md-9.col-sm-6.col-xs-12
+          h4 Built-in USB port
+          p When ordering an MS1 or MS2 ECU you can now specify it with a built in USB port.
+          p
+            | This means no adaptor is needed, compatable with all windows versions, including Windows 7.
+          p
+            a(href='#') Driver download here
+      hr
+      #injector.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/Inj_Plug_Small.jpg').m-b-md
+          form(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
+            input(type='hidden', name='cmd', value='_s-xclick')
+            input(type='hidden', name='hosted_button_id', value='K44DGYVUP4ALJ')
+            table.w-full.m-b-md
+              tbody
+                tr
+                  td
+                    input(type='hidden', name='on0', value='Quantity')
+                tr
+                  td
+                    select(name='os0').w-full.form-control
+                      option(value='Pack of 4') Pack of 4 £20.00 GBP
+                      option(value='Pack of 6') Pack of 6 £28.00 GBP
+                      option(value='Pack of 8') Pack of 8 £36.00 GBP
+                      option(value='Pack of 9 (RV8)') Pack of 9 (RV8) £39.00 GBP
+            input(type='hidden', name='currency_code', value='GBP')
+            input(type='submit', border='0', name='submit', value='Pay with Paypal', alt='PayPal — The safer, easier way to pay online.').btn.btn-dark.w-full
+            img(alt='', border='0', src='https://www.paypalobjects.com/en_GB/i/scr/pixel.gif', width='1', height='1')
+        .col-md-9.col-sm-6.col-xs-12
+          h4 Bosch injector style plug
+          p
+            | This is the standard injector plug used on most vehicles using bosch style injectors as found on Fords, RV8's, etc.
+          p
+            | Each item comes with a rubber boot and 2 crimp terminals for the cables, for best results are to solder the wire to the crimps after crimping.
+          p
+            strong
+              | If buying one of these when purchasing an ECU I can slip it in the same box, so no postage cost needed.
+      hr
+      #relay.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/Relay_Small.jpg').m-b-md
+          p
+            ul.list-unstyled
+              li
+                strong Single sensor input unit
+                |  - £35
+              li
+                strong Twin sensor input unit
+                |  - £40
+              p Plus £5 postage within the UK or £8 abroad.
+        .col-md-9.col-sm-6.col-xs-12
+          h4 30A Relay and base with 3 fused outlets
+          p
+            | This is ideal for wiring the power to the idle valve, injectors and or the ignition so that the MS ECU controls when they get power.
+          p
+            | Although this is not strictly needed, it can be wired to allow power to come on to the injectors, etc, when the MS see's an RPM.
+          p
+            | This means wiring it into the fuel pump output, see 
+            a(href='#') HERE for a diagram.
+            |  With up to 30A of control, it should be able to control most items that the MS needs.
+      hr
+      #stepper.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/RV8_IAC_Plug_Small.gif').m-b-md
+          p
+            ul.list-unstyled
+              li
+                strong Single sensor input unit
+                |  - £35
+              li
+                strong Twin sensor input unit
+                |  - £40
+              p Plus £5 postage within the UK or £8 abroad.
+        .col-md-9.col-sm-6.col-xs-12
+          h4 Rover V8 Hotwire stepper (idle valve) connector
+          p
+            | This is a brand new connector for the RV8 idle valve, as used on all the Hotwire EFI setups.
+          p It has 2" tails all ready to be connected into my ECU's looms.
+      hr
+      #hotwire.row
+        .col-md-3.col-sm-6.col-xs-12
+          img.w-full.r-2x(src='assets/img/accessories/RV8_Kit.jpg').m-b-md
+          p
+            ul.list-unstyled
+              li
+                strong Single sensor input unit
+                |  - £35
+              li
+                strong Twin sensor input unit
+                |  - £40
+              p Plus £5 postage within the UK or £8 abroad.
+        .col-md-9.col-sm-6.col-xs-12
+          h4 Rover V8 Hotwire connector & relay kit
+          p This is a kit of connectors for the Hotwire RV8 engines.
+          p
+            strong Included:
+            ul
+              li 8 x connectors for the fuel injectors
+              li 1 x connector for the coolant sensor
+              li 1 x stepper idle valve connector
+              li 1 x 30A relay with 3 fused outlets
+          p
+            strong All pins and rubber boots are supplied with the kit.
