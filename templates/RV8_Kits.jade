@@ -1,0 +1,828 @@
+extends ./layouts/default
+
+block content
+  .container
+    .bg-white.wrapper.m-t-xl.m-b-xl
+      h3 V8 Kits Rover/TVR etc.
+      hr
+      tbody
+        tr
+          td(width='305', height='227')
+            div(align='center')
+              img(src='Pix/USB_In.png', width='270', height='175')
+              br
+              strong Built-in USB port now available for £30
+          td(width='421')
+            p.style15(align='center')
+              a(href='#pnp') New - Plug-N-Play ECU's for Lucas Hotwire
+            p.style15(align='center')
+              a(href='#edis') Fuel with Wasted Spark Ignition Control EDIS8
+            p(align='center')
+              span.style15
+                a(href='#wasted') Fuel with Wasted Spark Ignition Control Directly Fired from ECU (Not EDIS8)
+            p.style15(align='center')
+              a(href='#semi') Semi-Sequential Fuel with Wasted Spark Ignition Control
+            p.style15(align='center')
+              a(href='#full_seq') Fully-Sequential Fuel with Wasted Spark Ignition Control
+          td(width='304')
+            img(src='Pix/Package_B.jpg', width='270', height='175')
+            br
+      p(align='left')
+        | These kits are put together so you get everything you need to get your engine running in one go. You just need some HT leads with the Ford Gen 2 Coil connectors on them.
+        br
+        |             The MegaSquirt ECU has all the 
+        a(href='products.htm') standard features
+        |  you've come to expect from myself plus a fan output for optional cooling fan control, a tacho output for your rev counter (tacho output only for non-distributor setups) and an Air Temperature Sensor to allow the MAF to be removed. All ECU's, apart from the 
+        a(href='#semi') semi and full sequential fuel models
+        | , come with 2 injector bank outputs for batch firing of the injectors (as the Lucas ECUs.
+      p(align='left')
+        | If you just want the ECU without the other bits then see the Engine Management Page 
+        a(href='MS_All_products.htm') here
+        | .
+      p(align='left')
+        | All kits are MS2-Extra ECU's, if you want an MS1-Extra ECU then simply reduce the cost by £50 (
+        i RV8 PnP models are not available using the MS1
+        | ), you will lose the idle stepper motor control with an MS1. An MS2-Extra and an MS3 ECU can drive the standard Lucas Idle Valve directly.
+      p(align='left')
+        | All these ECU's allow you to remove the restrictive AFM (Flapper or Hotwire). An Air Temperature Sensor is supplied and needs fitting into the air intake close to the throttle plate. The MAP sensor is built into the ECU and simply needs 'T'eeing into the fuel pressure regulator reference pipe, do not use the vacuum feed for the distributor as this is a ported hole.
+      hr
+      h2#pnp
+        | Rover V8 Plug-N-Play (RV8 PnP) MegaSquirt ECU:
+        br
+        span.style46 £875 + £30 postage
+      p
+        | To directly replace the Lucas Hotwire (14CUX) on TVR's, Morgans, Rovers, etc.
+        | This ECU is a plug in replacement for the Lucas Hotwire system (14CUX) . This gives you all of the benefits of the MegaSquirt ECU, mappable fuel and ignition, without the hassle of any modifications to the main wiring harness. This is only available as a wasted spark setup, giving you distributorless ignition. The wasted spark ECU needs an ignition loom adding (supplied with the ECU) and a 36-1 wheel mounting on the crank, etc, but the basic Lucas loom is left as it was and is used to supply the throttle angle, coolant, air temp (from a new sensor), etc, to the MS ECU. This keeps your wiring as close to original as possible, so you don't lose any of the originality if that's a concern for you.
+      table(width='100%', align='left')
+        tbody
+          tr
+            td(width='75%', height='514')
+              p(style='text-align: left;')
+                strong Kit Details:
+                br
+                |                 At the heart of this ECU is an MS2 running the MS-Extra code.
+              p(style='text-align: left;')
+                em
+                  strong Parts Included:
+                  br
+                  |                   36-1 Crank Wheel (Designed for Rover V8)
+                br
+                |                   Crank Sensor Bracket for RV8 
+                em (Please specify if it's for a Serp or Non Serp)
+                br
+                | Crank Sensor 
+                strong (Brand New)
+                br
+                | An Air Temperature Sensor (this needs fitting into the air flow.)
+                br
+                | 2 x Coil Packs 
+                strong (Brand New Ford Gen 2)
+                br
+                | Spark Loom, with Coil Connectors and Crank Sensor Connectors all fitted
+                br
+                | Tuning Software
+                br
+                | RS232 Comms Cable
+                br
+                | CD with manuals specifically designed around the MS2-Extra ECU as well as drawings for the RV8, etc.
+              p(style='text-align: left;')
+                span.style24 Basically all the parts you need apart from the HT leads!
+              p(style='text-align: left;')
+                | All these ECU's allow you to remove the restrictive MAF Meter.
+                br
+                |                   Keeps the original Lucas Loom as it came from the factory.
+              h2(style='text-align: left;') Fuel and Wasted Spark ECU
+              h3(style='text-align: left;')  £875 + £30 postage in the UK and £40 postage abroad.
+              p.style40.left-align
+                | This comes with a 36-1 crank wheel, crank sensor, bracket and a pair of Ford coil packs. 
+                br
+              p.style41.left-align(style='font-size: 24px;')
+                | I can also supply this kit with the GEMs coil packs for £65 extra.
+                br
+              p.left-align
+                b Technical Details:
+                br
+                |                     Plug-n-Play technology
+                br
+                |                     Built-in MAP sensor (up to 21PSI of boost). This needs to be plumbed into the plenum. 
+                i 'T'eed into Fuel pressure  reference pipe.
+                br
+                |                     16 x 16 Fuel Table. (Can be TPS or MAP based independant of ignition table)
+                br
+                |                     12 x 12 Spark Table ( Can be TPS or MAP based independant of Fuel Table, with the Wasted Spark option)
+                br
+                |                     Rev Limiter (fuel cut with fuel only, spark cut or both with wasted spark option)
+                br
+                |                     Stepper Motor Idle valve control. (controls the Hotwire OEM idle valve)
+                br
+                |                     Purge Valve control (programmable but setup for standard settings)
+                br
+                |                     Coolant related ignition advance table (wasted spark option)
+                br
+                |                     Inlet Air Temp related ignition retard table (wasted spark option)
+                br
+                |                     Built in Air density correction.
+                br
+                |                     Wideband or Narrowband lambda compatable. (Widebands need a controller, e.g. Innovates LC-1)
+                br
+                |                     AFR target tables if using a wideband lambda.
+                br
+                |                     Overrun fuel cut.
+              form(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
+                input(type='hidden', name='cmd', value='_s-xclick')
+                input(type='hidden', name='hosted_button_id', value='R846MERMH42C4')
+                table
+                  tbody
+                    tr
+                      td
+                        input(type='hidden', name='on0', value='RV8 PnP with .........')
+                        | RV8 PnP with .........
+                    tr
+                      td
+                        select(name='os0')
+                          option(value='PnP MS2 without Coil Packs(UK Postage)') PnP MS2 without Coil Packs(UK Postage) £825.00 GBP
+                          option(value='PnP MS2 with Ford Coil Packs (UK Postage)') PnP MS2 with Ford Coil Packs (UK Postage) £875.00 GBP
+                          option(value='PnP MS2 with GEMS Coil Packs (UK Postage)') PnP MS2 with GEMS Coil Packs (UK Postage) £940.00 GBP
+                          option(value='PnP MS2 without Coil Packs(EU Postage)') PnP MS2 without Coil Packs(EU Postage) £835.00 GBP
+                          option(value='PnP MS2 with Ford Coil Packs (EU Postage') PnP MS2 with Ford Coil Packs (EU Postage £885.00 GBP
+                          option(value='PnP MS2 with GEMS  Coil Packs (EU Postage') PnP MS2 with GEMS  Coil Packs (EU Postage £950.00 GBP
+                    tr
+                      td
+                        input(type='hidden', name='on1', value='Enter engine year / cc Info')
+                        | Enter engine year / cc Info
+                    tr
+                      td
+                        input(type='text', name='os1', maxlength='200')
+                input(type='hidden', name='currency_code', value='GBP')
+                input(type='image', src='https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif', border='0', name='submit', alt='PayPal – The safer, easier way to pay online.')
+                img(alt='', border='0', src='https://www.paypalobjects.com/en_GB/i/scr/pixel.gif', width='1', height='1', style='display: none !important;')
+              p
+              hr
+            td(width='275')
+              div(align='center')
+                p
+                  a(href='Pix_PnP/RV8_PnP.jpg', rel='lytebox[PnP_RV8]', title='MS2 based Lucas 14CUX Plug in Replacement')
+                    img(src='Pix_PnP/RV8_PnP_Small.jpg', width='180', height='186')
+                    br
+                    br
+                  a(href='Pix_PnP/RV8_PnP1.jpg', rel='lytebox[PnP_RV8]', title='MS2 based Lucas 14CUX Plug in Replacement')
+                    img(src='Pix_PnP/RV8_PnP1_Small.jpg', width='180', height='180')
+      hr
+      h2#edis
+        | Fuel with EDIS8 Wasted Spark Ignition Control (Distributorless):
+        br
+        span.style47 £575 + £25 postage
+      p
+        | Unlike the 
+        b RV8 PnP ECU's
+        | , this needs wiring into your existing system. This setup allows you to run without the need for a distributor. The  EDIS8 module is triggered from the 36-1 crank wheel which doesn't have any drive chains and gears driving it like the distributor, so it gives a much more accurate ignition timing. The EDIS8 sends a signal to the MS ECU telling it the engine speed. The MS ECU then sends a signal back to the EDIS8 module telling it the required angle to fire the coilpacks at. The EDIS8 fires a set of four coils that are directly connected to pairs of cylinders, this means the distributor is no longer needed. It does mean you'll have to fit a 36-1 crank wheel (included in the kit) and a crank sensor (also included in the kit) but it's is easy to do, see 
+        a(href='wheel_fitting.htm') here
+        | . The kit is based around the
+        b  Ford EDIS8
+        |  system, this is a 12 pinned module which has the ignition coil drivers inside it, keeping potential noise away from the main ECU, so it's pretty immune to noise. See 
+        a(href='edis.htm') here
+        |  for instructions on the EDIS8. This setup will then give you mappable fuel (16x16 table) and ignition (12x12 table). Again, it can control the Lucas Idle Valve,  see 
+        a(href='compare.htm') here
+        |  for more of the MS-Extra features.
+      table(width='1052', align='left')
+        tbody
+          tr
+            td(width='774')
+              p.left-align
+                b Kit Includes: 
+                br
+                |                 MS2-Extra ECU 
+                br
+                |                 Air Temperature Sensor with connector
+                br
+                a(href='Pix/cable.jpg', rel='lytebox', title='ExtraEFI Wiring Loom') Wiring Loom
+                |  (1m long) 
+                br
+                em
+                  strong
+                    | 36-1 Crank Wheel (Designed for Rover V8 as shown) or
+                    br
+                    |  36-1 Crank Wheel for non-RV8. You can choose 101.5mm, 171.5, 
+                    |                             209.5mm for 
+                    font(color='#ccc') £20 less!
+                br
+                |                 Crank Sensor Bracket for RV8 
+                em (Please specify if it's for a Serp or Non-Serp)
+                br
+                |                 EDIS8 MODULES OUT OF STOCK
+                br
+                |                 Crank Sensor 
+                strong (Brand New)
+                br
+                |                 Crank Sensor Connector 
+                strong (Brand New)
+                br
+                |                 Coil Packs x 2 
+                strong (Brand New Ford Gen 2)
+                br
+                |                 Coil Pack Connectors 
+                strong (Brand New)
+                br
+                |                 Tuning Software
+                br
+                |                 RS232 Comms Cable
+                br
+                |                 CD with manuals specifically designed around the MS2-Extra ECU as well as drawings for the RV8, etc.
+              p.left-align(style='color: #fff;') Basically all the parts you need apart from EDIS8 module and the HT leads!
+              p.left-align
+                | £575 + £25 postage in the UK and £35 for postage abroad.
+                font(color='#ccc')
+                  em
+                    br
+                    |                         (For an MS1 REDUCE cost by £55   --    For an MS3 INCREASE cost by £85)
+                br
+              p
+                strong
+                  span.style42 Also See:
+                span.style15
+                  strong
+                    span.style32
+                      strong
+                        br
+                        a(href='Misc_products.htm#step') RV8 Connector Pack
+                        |  with Relay for 
+                        span.style27 £60
+                    br
+                    em
+                      a(href='Pix/Tacho_A.jpg', rel='lytebox', title='ExtraEFI Tacho Generator') Tacho Adaptor
+                      span.style36
+                        | (Replicate the coil signal to a rev counter) 
+                        span.style27 for £30
+                      br
+                      span.style30
+                        a(href='Pix/Bung.jpg', rel='lytebox', title='Distributor Bung') Distributor Bung
+                        |  (Fill
+                    span.style32 the hole of a Serp front end distributor
+                    span.style30 )
+                  span.style45
+                  span.style44  for £20
+                  span.style45
+                  strong
+                    span.style30
+                      br
+                      a(href='Misc_products.htm')
+                        em Knock Conditioner Unit
+                      span.style27
+                        em  for £35
+                br
+              p.left-align
+                b Technical Details:
+                br
+                |                       Built-in MAP Sensor (up to 21PSI of boost). This needs to be plumbed into the plenum. 
+                i 'T'eed into Fuel pressure reference pipe.
+                br
+                |                       16 x 16 Fuel Table. (Can be TPS or MAP based independant of ignition table)
+                br
+                |                       12 x 12 Spark Table (Can be TPS or MAP based independant of fuel table)
+                br
+                |                       Rev Limiter (fuel cut)
+                br
+                |                       Stepper Motor Idle Valve Control (controls the Hotwire OEM idle valve)
+                br
+                |                       Coolant related ignition advance table
+                br
+                |                       Inlet Air Temp related ignition retard table
+                br
+                |                       Built-in Air density correction.
+                br
+                |                       Wideband or Narrowband lambda compatable. (Widebands need a controller, e.g. Innovates LC-1)
+                br
+                |                       AFR target tables if using a wideband lambda.
+                br
+                |                       Overrun Fuel Cut.
+            td(width='266')
+              p(align='center')
+                a(href='Pix/Package.jpg', rel='lytebox', title='Standard ExtraEFI Package')
+                  span.style31
+                    img(src='Pix/Package_VSmall.jpg', width='180', height='110')
+                a(href='Pix/rv8_36-1_Large.jpg', rel='lytebox[EDISKIT]', title='Rover V8 36-1 wheel')
+                  br
+                  br
+                  img(src='Pix/rv8_36-1.jpg', width='180', height='110', alt='Click to Enlarge')
+                  br
+                  br
+                a(href='Pix/RV8_Kit.jpg', rel='lytebox[EDISKIT]', title='Used EDIS8 Module, New Coil Packs and connectors')
+                  img(src='Pix/EDIS_Pack_Small.jpg', width='180', height='110', alt='Click to enlarge')
+                a(href='Pix/New_VR.jpg', rel='lytebox[EDISKIT]', title='New Crank Sensor and Plug')
+                  br
+                  br
+                  img(src='Pix/New_VR_Small.jpg', width='180', height='110')
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      hr(align='left')
+      h2#wasted Fuel with Wasted Spark Ignition Control (Directly Fire Coils):
+      h3
+        i £615 + £25 postage
+      p
+        | Unlike the 
+        b RV8 PnP ECU's
+        | , this needs wiring into your existing system. This setup is very similar to the EDIS8 kit but it doesn't use the EDIS8 module as it can directly fire the coil packs using built-in Bosch ignition drivers. I recommend fitting resistive spark plugs when using these ECU's as well as ensuring you have good engine grounds. This ECU allows you to run without the need for a distributor as the trigger to the ECU comes directly off a 36-1 crank which doesn't have any drive chains and gears driving it like the distributor, so it gives a much more accurate ignition timing. It does mean you'll have to fit a 36-1 crank wheel 
+        |           (included in the kit) and a crank sensor (also included in the kit) but it's is easy to do, see 
+        a(href='wheel_fitting.htm') here
+        | . This setup will then give you mappable fuel (16x16 table) and ignition (12x12 table). Again, it can control the Lucas Idle Valve, see 
+        a(href='compare.htm') here
+        |  for more of the MS-Extra features.
+      table(width='1064', align='left')
+        tbody
+          tr
+            td(width='690', height='659')
+              p.left-align
+                b Kit Includes: 
+                br
+                |                 MS2-Extra ECU 
+                br
+                |                 Air Temperature Sensor with connector.
+                br
+                a(href='Pix/cable.jpg', rel='lytebox', title='ExtraEFI Wiring Loom')
+                  | Wiring
+                  | loom
+                |  (1m long) 
+                br
+                em
+                  strong
+                    | 36-1 crank wheel (Designed for Rover V8 as shown) or 
+                    br
+                    |                             36-1 crank wheel for non-RV8 you can choose 101.5mm, 171.5, 209.5mm for 
+                    font(color='#CCCCCC') £20 less!
+                br
+                |                 Crank Sensor Bracket for RV8 
+                em (Please specify if its for a Serp or Non Serp)
+                br
+                |                 Crank Sensor 
+                strong (Brand New)
+                br
+                |                 Crank Sensor connector 
+                strong (Brand New)
+                br
+                |                 Coil Packs x 2 
+                strong (Brand New Ford Gen 2)
+                br
+                |                 Coil Pack connectors 
+                strong (Brand New)
+                br
+                |                 Tuning Software
+                br
+                |                 RS232 Comms Cable
+                br
+                |                 CD with manuals specifically designed around the MS2-Extra ECU as well as drawings for the Rv8, etc.
+              p.left-align(style='color: #fff;') Basically all the parts you need apart from the HT leads!
+              p.left-align
+                | £615 + £25 postage in the UK and £35 abroad.
+                font(color='#ccc')
+                  em
+                    br
+                    |                         (For an MS3 INCREASE the cost by £85)
+                br
+              strong
+                br
+              p
+                strong
+                  span.style42
+                    | Also See:
+                    br
+                    |                       Complete 
+                    a(href='Pix/BLoom.jpg', rel='lytebox', title='Bespoke Looms made to measure') Bespoke Wiring Loom
+                    |  (especially designed for the Rover V8) 
+                    span.style27  for £175
+                    strong
+                span.style15
+                  strong
+                    span.style32
+                      strong
+                        br
+                        a(href='Misc_products.htm#step') RV8 Connector Pack
+                        |  with Relay 
+                        span.style27  for £60
+                    br
+                    em
+                      a(href='Pix/Tacho_A.jpg', rel='lytebox', title='ExtraEFI Tacho Generator') Tacho Adaptor
+                      span.style36
+                        | (Replicate the coil signal to a rev counter) 
+                        span.style27  for £30
+                      br
+                      span.style30
+                        a(href='Pix/Bung.jpg', rel='lytebox', title='Distributor Bung') Distributor Bung
+                        |  (Fill
+                    span.style32 the hole of a Serp front end distributor
+                    span.style30 )
+                  span.style45
+                  span.style44  for £20
+                  span.style45
+                  strong
+                    span.style30
+                      br
+                      a(href='Misc_products.htm')
+                        em Knock Conditioner Unit
+                      span.style27
+                        em  for £35
+                strong
+                  span.style30
+                    font(size='2')
+                      br
+              p.left-align
+                b
+                  | Technical  Details:
+                br
+                |                           Built-in MAP sensor (up to 21PSI of boost). This needs to be plumbed into the plenum. 
+                em 'T'eed into Fuel pressure reference pipe.
+                br
+                |                           16 x 16 Fuel Table. (Can be TPS or MAP based independant of ignition table)
+                br
+                |                           12 x 12 Spark Table (Can be TPS or MAP based independant of fuel table)
+                br
+                |                           Rev Limiter (fuel cut and or round robin spark cut)
+                br
+                |                           Stepper Motor Idle Valve Control. (controls the Hotwire OEM idle valve)
+                br
+                |                           Coolant related Ignition Advance Table
+                br
+                |                           Inlet Air Temp related Ignition Retard Table
+                br
+                |                           Built-in Air Density Correction.
+                br
+                |                           Wideband or Narrowband lambda compatable. (Widebands need a controller, e.g. Innovates LC-1)
+                br
+                |                           AFR Target Tables if using a Wideband Lambda.
+                br
+                |                       Overrun Fuel Cut
+            td(width='362')
+              div(align='center')
+                p
+                  a(href='Pix/Package.jpg', rel='lytebox', title='Standard ExtraEFI Package')
+                    span.style31
+                      img(src='Pix/Package_VSmall.jpg', width='180', height='110')
+                  a(href='Pix/rv8_36-1_Large.jpg', rel='lytebox[RV8KIT]', title='Rover V8 36-1 wheel')
+                    br
+                    br
+                    img(src='Pix/rv8_36-1.jpg', width='180', height='110', alt='Click to Enlarge')
+                    br
+                    br
+                  a(href='Pix/V8_Pack.jpg', rel='lytebox[RV8KIT]', title='New Coil Packs and connectors')
+                    img(src='Pix/EDIS_Pack_Small.jpg', width='180', height='110', alt='Click to enlarge')
+                  br
+                  br
+                  a(href='Pix/New_VR.jpg', rel='lytebox[RV8KIT]', title='New Crank Sensor and Plug')
+                    img(src='Pix/New_VR_Small.jpg', width='180', height='110')
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p  
+      p  
+      p  
+      p  
+      hr
+      h2#semi Semi-Sequential Fuel with Wasted Spark Ignition Control (Directly Fire Coils):
+      h3 £675 + £25 postage
+      p
+        | Unlike the 
+        b RV8PnP ECU's
+        | , this needs wiring into your existing system. This setup is the same as the 
+        a(href='#wasted') Direct Fire ECU
+        |  but it has 4 injection output channels, so you can fire the fuel in a semi-sequential pattern.
+        |             See 
+        a(href='sequential_fuel.html') here
+        |  for more on sequential and semi-sequential fueling.
+        |             This system has a 6x6 table for tuning the fuel firing angle to allow for air speed, etc, (load/engine speed) and a fueling trim table which allows a + - 12.5% deviation for each pair away from the main fueling map.
+        |             Again, it can control the Lucas Idle Valve, see 
+        a(href='compare.htm') here
+        |  for more of the MS-Extra features.
+        br
+      p(style='text-align: center; color: #ccc;')
+        b (Hi - Impedance Injectors only!)
+      table(width='1063', align='left')
+        tbody
+          tr
+            td(width='691')
+              p.left-align
+                b Kit Includes: 
+                br
+                |                 MS2-Extra ECU 
+                br
+                |                 Air Temperature Sensor with Connector
+                br
+                a(href='Pix/cable.jpg', rel='lytebox', title='ExtraEFI Wiring Loom')
+                  | Wiring
+                  | Loom
+                |  (1m long) 
+                br
+                em
+                  strong
+                    | 36-1 Crank Wheel (Designed for Rover V8 as shown) or 
+                    br
+                    |                             36-1 Crank Wheel for non-RV8 you can choose 101.5mm, 171.5, 209.5mm for 
+                    font(color='#ccc') £20 less!
+                br
+                |                 Crank Sensor Bracket for RV8 
+                em (Please specify if it's for a Serp or Non Serp)
+                br
+                |                 Crank Sensor 
+                strong (Brand New)
+                br
+                |                 Crank Sensor Connector 
+                strong (Brand New)
+                br
+                |                 Coil Packs x 2 
+                strong (Brand New Ford Gen 2)
+                br
+                |                 Coil Pack Connectors 
+                strong (Brand New)
+                br
+                |                 Tuning Software
+                br
+                |                 RS232 Comms Cable
+                br
+                |                 CD with manuals specifically designed around the MS2-Extra ECU as well as drawings for the Rv8, etc.
+              p.left-align(style='color: #fff;') Basically all the parts you need apart from the HT Leads!
+              p.left-align
+                | £675 + £25 postage in the UK and £35 abroad.
+                font(color='#ccc')
+                  br
+                  |                         (
+                font(color='#CCCCCC')
+                  em For an MS3 INCREASE cost by £85)
+                br
+              p
+                strong
+                  span.style42
+                    | Also See:
+                    br
+                    | Complete
+                    a(href='Pix/BLoom.jpg', rel='lytebox', title='Bespoke Looms made to measure')  Bespoke Wiring Loom
+                    |  (especially designed for the Rover V8) 
+                    span.style27  for £175
+                    strong
+                span.style15
+                  strong
+                    span.style32
+                      strong
+                        br
+                        a(href='Misc_products.htm#step') RV8 Connector Pack
+                        |  with Relay 
+                        span.style27  for £60
+                    br
+                    em
+                      a(href='Pix/Tacho_A.jpg', rel='lytebox', title='ExtraEFI Tacho Generator') Tacho Adaptor
+                      span.style36
+                        | (Replicate the Coil Signal to a Rev Counter) 
+                        span.style27  for £30
+                      br
+                      span.style30
+                        a(href='Pix/Bung.jpg', rel='lytebox', title='Distributor Bung') Distributor Bung
+                        |  (Fill
+                    span.style32 the hole of a Serp front end Distributor
+                    span.style30 )
+                  span.style45
+                  span.style44  for £20
+                  span.style45
+                  strong
+                    span.style30
+                      br
+                      a(href='Misc_products.htm')
+                        em Knock Conditioner Unit
+                      span.style27
+                        em for £35
+                br
+              p.left-align
+                b Technical Details:
+                br
+                |                       Built-in MAP sensor (up to 21PSI of boost). This needs to be plumbed into the plenum. 
+                i 'T'eed into Fuel pressure  reference pipe.
+                br
+                |                       16 x 16 Fuel Table. (Can be TPS or MAP based independant of ignition table)
+                br
+                |                       12 x 12 Spark Table ( Can be TPS or MAP based independant of fuel table)
+                br
+                |                       Trim Tables for each Fuel Bank output (Using EGT sensing you can tune each bank to run the same)
+                br
+                |                       Rev Limiter (Fuel Cut and or round Robin Spark Cut)
+                br
+                |                       Stepper Motor Idle Valve Control. (controls the Hotwire OEM idle valve)
+                br
+                |                       Coolant related Ignition Advance Table
+                br
+                |                       Inlet Air Temp related Ignition Retard Table
+                br
+                |                       Built-in Air Density Correction
+                br
+                |                       Wideband or Narrowband lambda compatable. (Widebands need a controller, e.g. Innovates LC-1)
+                br
+                |                       AFR target tables if using a wideband lambda.
+                br
+                |                       Overrun Fuel Cut
+            td(width='360')
+              div(align='center')
+                a(href='Pix/Package.jpg', rel='lytebox', title='Standard ExtraEFI Package')
+                  span.style31
+                    img(src='Pix/Package_VSmall.jpg', width='180', height='110')
+                a(href='Pix/rv8_36-1_Large.jpg', rel='lytebox[RV8KIT2]', title='Rover V8 36-1 wheel')
+                  br
+                  br
+                  img(src='Pix/rv8_36-1.jpg', width='180', height='110', alt='Click to Enlarge')
+                  br
+                  br
+                a(href='Pix/V8_Pack.jpg', rel='lytebox[RV8KIT2]', title='New Coil Packs and connectors')
+                  img(src='Pix/EDIS_Pack_Small.jpg', width='180', height='110', alt='Click to enlarge')
+                a(href='Pix/New_VR.jpg', rel='lytebox[RV8KIT2]', title='New Crank Sensor and Plug')
+                  br
+                  br
+                  img(src='Pix/New_VR_Small.jpg', width='180', height='110')
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      p(align='left')  
+      blockquote
+        p  
+        p  
+        p  
+        p  
+        p  
+      hr
+      h2#full_seq Full-Sequential Fuel with Wasted Spark Ignition Control:
+      h3 £895 + £30 postage
+      p
+        span.style24
+          | Unlike the 
+          strong RV8 PnP ECU's
+          | , this needs wiring into your existing system.
+      br
+      p
+        | This is the ultimate setup for any engine. It essentially runs each cylinder individually (8 injector outputs). They all share a common fuel and ignition map, but each cylinder can be trimmed individually. This allows for as near a perfect tune as possible. See 
+        a(href='sequential_fuel.html') here
+        |  for more on sequential fueling. This comes with a modified distributor to give the cam signal needed for a sequential fuelling system. The system has a 12x12 table for tuning the fuel firing angle to allow for air speed, etc, (load/engine speed) and a 6x6 fueling trim table which allows a + - 12.5% deviation for each injector away from the main fueling map. Again, it can control the Lucas Idle Valve, it also has launch control, switchable maps, SD card data-logging, 2 spare analogue inputs (Second Lambda, etc.) as well as 4 programmable outputs that can be used for items such as fan control, warning led, etc.
+      p(style='text-align: center; color: #ccc;')
+        b (Hi - Impedance Injectors only!)
+      table(width='1063', align='left')
+        tbody
+          tr
+            td(width='691')
+              p.left-align
+                strong Kit Includes:
+                br
+                |                   MS3-Extra ECU with MS3X (expansion) Card
+                br
+                |                 Air Temperature Sensor with Connector
+                br
+                a(href='Pix/cable.jpg', rel='lytebox', title='ExtraEFI Wiring Loom') Wiring Loom
+                |  (1m long) 
+                br
+                em
+                  strong
+                    | 36-1 Crank Wheel (Designed for Rover V8 as shown) or 
+                    br
+                    |                             36-1 Crank Wheel for non-RV8 you can choose 101.5mm, 171.5, 209.5mm for 
+                    font(color='#ccc') £20 less!
+                br
+                |                 Crank Sensor Bracket for RV8 
+                em (Please specify if it's for a Serp or Non Serp)
+                br
+                |                 Crank Sensor 
+                strong (Brand New)
+                br
+                |                 Crank Sensor Connector 
+                strong (Brand New)
+                br
+                |                 Distributor Based Cam Sensor 
+                span.style34 (Exchange Unit, £45 surcharge)
+                br
+                |                 Coil Packs x 2 
+                strong (Brand New VW units with built-in Ignitors)
+                br
+                |                 Coil Pack Connectors 
+                strong (Brand New)
+                br
+                |                 Tuning Software
+                br
+                |                 USB Comms Cable
+                br
+                |                 CD with manuals specifically designed around the MS3 ECU as well as drawings for the Rv8, etc.
+              p.left-align(style='color: #fff;') Basically all the parts you need apart from the HT Leads!
+              br
+              p.left-align £895 + £30 postage in the UK and £40 abroad.
+              strong
+              p
+                strong
+                  span.style42
+                    br
+                    | Also see:
+                    br
+                    | Complete
+                    a(href='Pix/BLoom.jpg', rel='lytebox', title='Bespoke Looms made to measure')  Bespoke Wiring Loom
+                    |  (especially designed for the Rover V8) 
+                    span.style27  for £245
+                    strong
+                span.style15
+                  strong
+                    span.style32
+                      strong
+                        br
+                        a(href='Misc_products.htm#step') RV8 Connector Pack
+                        |  with Relay 
+                        span.style27  for £60
+                    br
+                    em
+                      a(href='Pix/Tacho_A.jpg', rel='lytebox', title='ExtraEFI Tacho Generator') Tacho Adaptor
+                      span.style36
+                        | (Replicate the coil signal to a rev counter) 
+                        span.style27  for £30
+                      br
+                      span.style30
+                        a(href='Pix/Bung.jpg', rel='lytebox', title='Distributor Bung') Distributor Bung
+                        |  (Fill
+                    span.style32 the hole of a Serp front end distributor
+                    span.style30 )
+                  span.style45
+                  span.style44  for £20
+                  span.style45
+                  strong
+                    span.style30
+                      br
+                      a(href='Misc_products.htm')
+                        em Knock Conditioner Unit
+                      span.style27
+                        em  for £35
+                br
+              p.left-align
+                b Technical Details:
+                br
+                |                       Built-in MAP Sensor (up to 21PSI of boost) This needs to be plumbed into the plenum. 
+                em 'T'eed into Fuel pressure reference pipe.
+                br
+                |                       16 x 16 Fuel Table. (Can be TPS or MAP based independant of ignition table)
+                br
+                |                   16 x 16 Spark Table ( Can be TPS or MAP based independant of fuel table)
+                br
+                |                       Trim Tables for each Fuel Bank output (Using EGT sensing you can tune each bank to run the same)
+                br
+                |                       Rev Limiter (Fuel Cut and or Round Robin Spark Cut)
+                br
+                |               Stepper Motor Idle Valve Control.(controls the Hotwire OEM Idle valve)
+                br
+                |                       Coolant related Ignition advance Table
+                br
+                |                       Inlet Air Temp related Ignition Retard Table
+                br
+                |                       Built in Air Density Correction
+                br
+                |                       Wideband or Narrowband lambda compatable. (Widebands need a controller, e.g. Innovates LC-1)
+                br
+                |                       AFR Target Tables if using a wideband lambda.
+                br
+                |                       Overrun Fuel Cut
+                br
+                b And lots lots more!! This is the ultimate MegaSquirt after all!
+            td(width='360')
+              div(align='center')
+                a(href='Pix/Package.jpg', rel='lytebox', title='Standard ExtraEFI Package')
+                  span.style31
+                    img(src='Pix/Package_VSmall.jpg', width='180', height='110')
+                a(href='Pix/rv8_36-1_Large.jpg', rel='lytebox[RV8KIT4]', title='Rover V8 36-1 wheel')
+                  br
+                  br
+                  img(src='Pix/rv8_36-1.jpg', width='180', height='110', alt='Click to Enlarge')
+                  br
+                  br
+                a(href='Pix/VW_Coil_Pack.jpg', rel='lytebox[RV8KIT4]', title='VW Coil Pack')
+                  img(src='Pix/VW_Coil_Pack_Small.jpg', width='180', height='110')
+                a(href='Pix/New_VR.jpg', rel='lytebox[RV8KIT4]', title='New Crank Sensor and Plug')
+                  br
+                  br
+                  img(src='Pix/New_VR_Small.jpg', width='180', height='110')
