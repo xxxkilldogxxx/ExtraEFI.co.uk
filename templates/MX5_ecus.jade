@@ -8,19 +8,19 @@ block content
       #ECU1.row
         .col-lg-4
           img.img-responsive.r-2x(src='assets/img/MX5_ECU/Picture%206.JPG')
-          form(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
+          form.m-t-sm.m-b-sm(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
             input(type='hidden', name='cmd', value='_s-xclick')
             input(type='hidden', name='hosted_button_id', value='X72XQTF59UUC2')
-            table(align='center')
+            table.w-full
               tbody
                 tr
                   td
-                    div(align='center')
+                    div
                       input(type='hidden', name='on0', value='Mazda Mk1 MX5 PnP year .........')
-                      |                                 Mazda Mk1 MX5 PnP year:
+                      | Mazda Mk1 MX5 PnP year:
                 tr
                   td
-                    select(name='os0')
+                    select(name='os0').w-full.form-control.m-t-sm.m-b-sm
                       option(value='1990 - 1993 (UK Postage)') 1990 - 1993 (UK Postage) £495.00 GBP
                       option(value='1990 - 1993 (EU Postage)') 1990 - 1993 (EU Postage) £500.00 GBP
                       option(value='1994 - 1995 (UK Postage)') 1994 - 1995 (UK Postage) £495.00 GBP
@@ -28,7 +28,7 @@ block content
                       option(value='1996 - 1997 (UK Postage)') 1996 - 1997 (UK Postage) £495.00 GBP
                       option(value='1996 - 1997 (EU Postage)') 1996 - 1997 (EU Postage) £500.00 GBP
             input(type='hidden', name='currency_code', value='GBP')
-            input(type='image', src='https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif', border='0', name='submit', alt='PayPal – The safer, easier way to pay online.')
+            input(type='submit', border='0', name='submit', value='Pay with Paypal', alt='PayPal — The safer, easier way to pay online.').btn.btn-dark.w-full
             img(alt='', border='0', src='https://www.paypalobjects.com/en_GB/i/scr/pixel.gif', width='1', height='1')
           p
             strong Note: Later MK2 alternators may need changing to a earlier version.

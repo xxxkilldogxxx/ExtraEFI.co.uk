@@ -1,0 +1,461 @@
+extends ./layouts/default
+
+block content
+  .container
+    .bg-white.wrapper.m-t-xl.m-b-xl
+      h3 Frequently asked questions:
+      #accordion.panel-group
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapse1')
+                | There's just too much information about MegaSquirts, I'm really confused by it all, can you help cut through it for me?
+          #collapse1.panel-collapse.collapse.in
+            .panel-body
+              p
+                | I agree, there is
+                | a lot of information out there and half of it is either irrelevant or
+                | not up to date. 
+                a(href='information_OL.htm') Have a read of this here
+                | ,
+                |                             it's a short list of what you really need to know to get running. Then
+                |                             follow the links to 
+                a(href='ms1_or_ms2.htm') here
+                |  and then finish
+                |                             with looking at the 
+                a(href='compare.htm') specs on the relevant MS products
+                | ,
+                |                             Hopefully this will help you get straight to what you need to know.
+                br
+                |                             Phil.
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse2')
+                | Why should I buy an MS ECU from you when I could buy one off some guy who made one and is trying to sell it on eBay?
+          #collapse2.panel-collapse.collapse
+            .panel-body
+              p
+                | Blimey, that's a nice
+                | question for me. but it is an important one to answer.
+                br
+                |                             As far as I know, I'm the only supplier who builds custom made MS ECU's
+                |                             specific to the customers requirements. Most I've seen on eBay don't
+                |                             have what mine have. 
+                br
+                br
+                |                             Let's take a Ford Zetec setup: An ECU
+                |                             from ExtraEFI will have a 
+                a(href='Drawings/PDF_Files/tacho_Wiring.pdf')
+                  | Tacho
+                  | output
+                |  (for the rev counter), 
+                a(href='Drawings/PDF_Files/4cy_Coil_Pack.pdf')
+                  | 2
+                  | bosch spark drivers
+                |  (to directly fire the Ford coil pack),
+                |                             a 
+                a(href='Drawings/PDF_Files/WiringLoom_VR_Hall.pdf')
+                  | colour
+                  | coded wiring loom
+                |  which matches the wiring diagrams on my
+                |                             CD, a 
+                a(href='downloads.htm') CD
+                |  with
+                |                             loads and loads of info/help files, wiring tips, etc. on it, including
+                |                             the manuals I wrote and the tuning software! It will also come with
+                |                             an 
+                a(href='Drawings/PDF_Files/idle_valves.pdf')
+                  | Idle
+                  | Valve
+                |  output designed to fire the original Ford Idle Valve.
+                |                             It will be configured ready for the 36-1
+                |                             crank wheel and will be ready for you to install and start tuning. It
+                |                             will come with a 
+                a(href='terms.htm') warranty
+                |  and you will be buying it from someone who isn't just trying to sell
+                |                             you something and then offering no 
+                a(href='support.htm') backup
+                | .
+                |                             You will also be buying it knowing it is built to a very
+                |                                 high standard and by someone who has made well over 500 of them
+                |                             and who is on the official recommended list of
+                |                                 suppliers. Need I say any more?
+              p
+                | Unfortunately I've seen
+                | it time and time again where someone buys an MS ECU off eBay, only
+                | to find out it won't run their engine, as it hasn't got enough spark
+                | drivers, it's not the version they thought it was, or the spark drivers
+                | are mounted incorrectly and they simply over heat and stop working,
+                | or the build quality means it keeps breaking down, resetting when driving,
+                | etc. Some eBay sellers simply have no idea and will tell you it
+                | will work fine on your car, they don't care as long as they make some
+                | money. Where as I care about MegaSquirts, I've spent years developing
+                | it and years building them. I want it to work and will help you all
+                | I can until your happy. Just look at all the help files, drawings, backup
+                | pages, manuals, etc, I've written to assist you all. 
+                br
+                |                             Lastly it may seem a bit cheaper, but there could be hidden costs for
+                |                             you, you'll need a wiring loom, comms cable, additional components to
+                |                             make it work, etc, my ECU's come with these items as standard. Where
+                |                             ever you decide to buy it from, just make sure they can back it up and
+                |                             that they are on the MS ECU recommended suppliers list! This list is
+                |                             there so you get what you pay for!
+                br
+                br
+                |                             Sorry, don't mean to go on, hopefully I've answered that for you.
+                br
+                | Phil.
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse3')
+                | If I buy an ECU from you, what else will I need? I mean, are there any hidden extras/costs that I have to buy after I've got the ECU, e.g. a relay board?
+          #collapse3.panel-collapse.collapse
+            .panel-body
+              p
+                | As long as you have
+                | all the usual hardware and sensors needed for a Fuel Injection System
+                | then NO, you will not need anything else other than a laptop, some time
+                | and patience. The ECU's I sell all come with a one meter long, fully
+                | labeled 
+                a(href='Pix/cable.jpg', target='_blank') wiring harness
+                | ,
+                |                             an RS232 cable (for connection to your laptop) and a CD with all the
+                |                             relevant software, drawings, etc. 
+                br
+                br
+                |                             You don't need the relay board as the ECU's I sell all have an upgraded
+                |                             Idle Valve output (so these can drive an idle valve directly without
+                |                             a relay). Normally the only relay you'll need to control is the Fuel
+                |                             Pump Relay and this doesn't warrant the expense and hassle of an extra
+                |                             board. 
+                br
+                | Phil.
+                br
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse12')
+                | I have a RV8 in my Land Rover and I use it for mud events. What do you recommend as far as upgrading the whole system including ignition, bearing in mind it needs to work in all sorts of muddy/wet conditions?
+          #collapse12.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, OK, this is the
+                | same as I would recommend for all RV8 based setups, TVR, Land Rovers,
+                | etc. You have 4 options:
+                br
+                |                             1) 
+                a(href='MS_All_products.htm') Fuel only
+                | : The distributor is kept as it is and you simply control fuel,
+                |                             (like the Lucas ECU does) You say you want ignition control too, so
+                |                             this option isn't really for you.
+                br
+                br
+                |                             2) 
+                a(href='MS_All_products.htm')
+                  | Ignition and
+                  | fuel
+                | : The distributor is locked inside so the weights and
+                |                             vacuum advance no longer move the trigger (points / sensor) this is
+                |                             easy to do by drilling a hole in the mechanism and putting a screw threw
+                |                             it, or welding it up. We can then fire the original ignition coil so
+                |                             you get mappable fuel and ignition using the distributor. This isn't
+                |                             the most accurate way to control ignition as the distributor's tend
+                |                             to wear and trigger timing varies due to gear wear, etc. (I had 4deg
+                |                             play in my own RV8 distributor setup)
+                br
+                br
+                |                             3) 
+                a(href='Misc_products.htm#ediskits')
+                  | Distributorless
+                  | ignition, wasted spark (EDIS8) and fuel
+                | : This means you'll
+                |                             need to fit a 36-1 crank wheel on the front pulley, a crank sensor to
+                |                             pick up the crank wheel, an EDIS8 module and a pair of 4cy Ford coil
+                |                             packs. This will give you wasted spark and an acurate timing pulse off
+                |                             the crank. Using the EDIS8 module means the spark drivers are external
+                |                             to the ECU, this keeps noise down in the ECU and helps for a nice install
+                |                             without issues. 
+                br
+                br
+                |                             4) 
+                a(href='MS_All_products.htm')
+                  | Distributorless
+                  | ignition, wasted spark, directly firing the coils from the MS ECU and
+                  | fuel
+                | , : This is very similar to the EDIS option, you'd need
+                |                             all the same parts except for the EDIS8 module. Where this differs is
+                |                             the MS ECU will have 4 spark drivers inside it that directly fire the
+                |                             coil packs. This can tend to be nosiey in the ECU, so precautions like
+                |                             grounds all back to the engine block, resistive spark plugs, resistive
+                |                             HT leads, capacitors on the coil packs, etc. All these precautions should
+                |                             be followed regardless of if its an EDIS or directly fired ECU, but
+                |                             the direct fired ECU is more prone to noise, so it is a must on them!
+                |                             TVR's for instance, tend to have poor earths, so can be prone to noise,
+                |                             but with the right guidelines these can run without issues. 
+                a(href='resets.htm')
+                  | See
+                  | my reset help page.
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse13')
+                | I am running a Lotus 7 style kitcar with a 2.0 blacktop Zetec installed, basically in standard dress, except for exhaust manifold and a front facing inlet plenum. It is running a standard EEC V ECU. I am looking to run a MegaSquirt system, to extract some extra power and learn about mapping. But I want an easy solution to plug into my existing sensors or even Ford loom. I have looked through your site, but I would like some more information please. I know I will need a Tacho output, and would probably want to run the existing MAF unless MAP is a better option. It obviously needs to meet current emissions so maybe a switchable map?
+          #collapse13.panel-collapse.collapse
+            .panel-body
+              p
+                | You can use all of the Ford
+                | sensors, the idle valve and the coil packs, etc, with the MegaSquirt's
+                | I sell. I don't sell an adapter to plug into your loom but the wiring
+                | diagram is easy to follow and all you have to do is splice into your
+                | loom or get an old Ford ECU and turn it into an adapter between the
+                | Ford and MegaSquirt loom. I have done this for several installs and
+                | it is a good method of keeping the wiring in the car as close to original
+                | as possible. You don't need the MAF sensor, we have a built in MAP sensor
+                | on the ECU and this is the best option for you in my opinion. It's only
+                | a case of piping it into the intake manifold (engine side of the throttle
+                | plate) 
+                br
+                |                             You shouldn't need to switch maps for emissions as the tested area can
+                |                             be tuned to pass and this will be OK to run in as well, as when they
+                |                             test the car the engine isn't under load so it won't be in a position
+                |                             on the map where you need to run rich for power, but if you need a switched
+                |                             map input then this is £8 extra. Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse14')
+                | I am going to be running very large injectors on my Zetec engine as I have fitted a huge turbo to it. What MS do you recommend for me?
+          #collapse14.panel-collapse.collapse
+            .panel-body
+              p
+                | As you will be using much larger injectors than needed to run at idle and cruise you would be better off with an MS2-Extra ECU as it has better control (resolution) over the injectors. This will allow you to tune the engine better at lower engine speeds. Phil.
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse15')
+                | Can I use my standard temperature sensors that I already have on the engine or do I have to buy special sensors?
+          #collapse15.panel-collapse.collapse
+            .panel-body
+              p
+                | Well some engines
+                | have their air temperature sensor built into the Air Flow Meter. As
+                | these meters are generally removed to increase the breathing capacity
+                | on a lot of engines then you would probably need to get an air temp
+                | sensor from another vehicle or buy a MegaSquirt compatible sensor. So
+                | yes, you can use the standard sensors but it depends on whether your
+                | going to remove it. The ECU and the tuning software (MegaTune) would
+                | need to be configured for the sensors. I can set up the ECU for your
+                | sensors for free, but I would need 3 resistance measurements, see 
+                a(href='software/Temp_Sensor_Instructions.pdf') here
+                |  for more details on the measurements. I may already have done a set
+                |                             of sensors for your engine, please download this file 
+                a(href='inc_files/Inc_Files.zip') here
+                |  and check if your engine is in there. Just give me all the details when
+                |                             you order and I will do it all for you. Phil
+                br
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse16') Can these ECU's be run without a Lambda Sensor?
+          #collapse16.panel-collapse.collapse
+            .panel-body
+              p
+                | It is perfectly
+                | possible to run without a lambda sensor but it's not recommended unless
+                | you're not worried about the efficiency of the engine as the ECU will
+                | have no feedback from the exhaust so it will not be able to correct
+                | the fueling. You will have to have a lambda sensor to tune it in the
+                | first place unless you're going to use a Rolling Road, as these are
+                | used to tell you what Air:Fuel Ratio (AFR) the engine is running at.
+                | They are cheap enough to buy (around £30 for a good Bosch sensor
+                | or £130ish for a Wideband) so I would fit one if you don't already
+                | have one. The bung that's needed for them to screw into the exhaust
+                | can be found in the scrap bin at any exhaust replacement garage and
+                | they are usually given to you free. Phil
+                br
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse17') Do I need an MS2 ECU? Ive heard these are better and faster than the MS1?
+          #collapse17.panel-collapse.collapse
+            .panel-body
+              p
+                | A: MS2 is basically a daughter
+                | board that sits in the socket that the original MS1 microprocessor lives
+                | in. It is indeed a faster processor and it has more ram. As it's a daughter
+                | board that replaces the MS1 microprocessor then an MS1-Extra ECU can
+                | usually be upgraded to MS2. See 
+                a(href='ms1_or_ms2.htm') here
+                |  for
+                |                             more details on MS1-Extra and MS2-Extra comparisons Phil.
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse18')
+                | I am building a Fiesta Mk3 with a 2.0L Zetec and just wanted to know how hard it would be to use your system with throttle bodies, how hard it is to fit it and would i need to have an old loom in the car to start with, thanks very much.
+          #collapse18.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, well I can’t say how easy it would be as easy for
+                | someone is hard for someone else. There’s no reason why fitting
+                | an MS ECU should be any harder than any other after market ECU, in fact
+                | with all the help available with my 
+                a(href='support.htm') Support pages
+                | ,
+                |                             the help I can offer by E-Mail or the phone and on the MS forum (
+                a(href='http://www.msextra.com') www.msextra.com
+                | )
+                |                             it is probably easier. Take a look at the Drawings section 
+                a(href='drawings.htm') here
+                |  to see how the ECU is connected, this should give you an insight as
+                |                             to what it entails. 
+                br
+                |                             You’ll need either an old loom with the relevant connectors on
+                |                             it for your sensors or you'll need to get the correct ends for your
+                |                             sensors. This would then need to be connected to the loom I supply with
+                |                             the ECU, Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse19')
+                | Hi There, I've been thinking about one of these units for a while. I’m running a 1955 Buick V8 with an old Hilborn mechanical injection system that I’m going to convert to EFI (They do parts to convert these including the TPS etc), the system would only be capable of using the standard points distributor. Do you know if the Megasquirt will work with this type of set up? Ohh and nice work on the Cobra. Cheers Dave
+          #collapse19.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, the basic parts you'll need are; 
+                br
+                |                             Air Temperature sensor, a coolant temperature sensor, a Lambda sensor,
+                |                             an electric high pressure fuel pump, a set of electric fuel injectors,
+                |                             a suitable inlet manifold with the hardware for an injection system
+                |                             and MS can control it. I have converted a Triumph TR6, which was Mechanical
+                |                             Fuel Injection, over to MegaSquirt controled EFI using injectors and
+                |                             a few other bits from a Vauxhall Omega.
+                br
+                |                             It will work fine with a distributor and points, if you want to run
+                |                             a mapped ignition system you'll need to 'lock' the distributor up so
+                |                             the weights and vacuum advance have no affect to the position of the
+                |                             points opening with respect to the timing. If you don't want to run
+                |                             ignition mapping then that's fine, you don't need to lock the distributor
+                |                             up, just leave it and it will trigger the MS ECU for fueling. Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse20')
+                | I have a BMW M535i, with Motronic 1.0 &amp; Mass Airflow Sensor etc. It will have to be built on a budget, but I have just bought a secondhand, Eaton M62 Supercharger & I want to fit it to the car. I am not going to do any mods to the engine internally, as I have been told that I can may get away with about 8 psi boost? I am guessing that I will need a complete programmable ECU, what do you think? Or do you think I can add a couple of extra injectors & a boost retard sensor with a piggy back computer of some kind, to sense boost (retard) & add extra fuelling? I am very serious about doing this project as I think it will be a very good Street Sleeper car. I will want to also Drag race it at Santa-pod & get some 1/4 mile times. Kevin
+          #collapse20.panel-collapse.collapse
+            .panel-body
+              p
+                | I'm not that familiar with the BMW engine, so I wouldn't like to say if it can take 8psi of boost, but I can tell you I added 8psi of boost to a 9.75:1 compression ratio 3.5L Rover V8 without any internal changes. I used a MegaSquirt ECU to control the fuel and ignition on that engine. But one thing is for sure, you will definetly need to control fuel and spark with an aftermarket ECU, it will not work efficiently just adding a few injectors or piggybacking your original injectors. Megasquirt will definetly control your setup very well, it is an ideal ECU for your purpose. I would think you'll need a larger set of injectors at least, it depends on what power you anticipate getting from the engine and the flow rates of your current injectors, (this can be found from the Internet). You really need to read the MS manuals here. If you decide Megasquirt is the way to go for you then you can purchase an ECU from me. Good luck with your project, Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse21')
+                | What would i need to set up launch control, shift lights and the switchable map tables. Also you say you fit these how much just for an idea would it cost to fit this . Thanks very much.
+          #collapse21.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, I can add the launch control circuit, the switchable table circuit and the shift lights outputs, (the shift lights would be limited to one light as there's only enough connections on the standard 37 pin connector for 4 outputs, and I use one for the second Spark output on a 4cy wasted setup). All you'll need to do then is add a couple of switches, one on the clutch pedal for launch and one on the dash for switching tables. I don't actually fit the ECU's to any cars for the general public, I have installed them into a lot of my mates cars and various cars of my own and family, but fitting isn't too bad if you can follow a general diagram. Take a look in the wiring section for more info on what's needed to wire one up here. Youll also find various diagrams for the shift LED, Launch, etc, there. Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse22')
+                | Hi, I am thinking of fitting an EDIS based Megasquirt to my Rover V8 EFI to run on petrol and LPG. What would be the best Megasquirt module for this and how much would it cost for you to supply it? I know this is a very large subject but I am just trying to get an idea of what I need and the cost. Thanks Ben.
+          #collapse22.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, the EDIS system is a very reliable setup that is not prone to noise, etc, so is a good way to get wasted spark. As for LPG, the best option would be to have it wired for switched tables (so you run one fuel map and spark map when in petrol mode and a completely different one in LPG mode) this will allow you to tune the 2 fuels virtually independently. For adding a switcheable input I would charge £8 more, so its not very expensive. Good luck with your project, Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse23')
+                | Hi there, I have read your FAQ's and have seen the one about the 2.0L Zetec and bike TB's (throttle bodies). I am very new to all this, so I need help, I want to purchase this MS system but I don't know what else I need. I'm running a kit car with a Ford CVH engine, I'm changing to 2 liter Zetec with Yamaha R1 ITB's, what will I need on top of this package as far as wiring goes?
+          #collapse23.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, as far as wiring goes you need the relevant plugs for all your sensors. You should already have all the sensors needed on the engine, Air Temperature Sensor, etc. Virtually all original equipment sensors will work fine with the MS ECU. Your Zetec would have a crank sensor on it and a 36-1 trigger wheel which can be used directly with a V3.0 MS. You should also have a coil pack sat on top of the engine, this can be directly driven from this MS ECU V3.0 too, so you'll have fuel and ignition control in wasted spark mode on your setup with this MS. Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse24')
+                | Hi, I am building a BMW 318is M42 with throttle bodies, high cams, etc. With this system, can I get rid of the MAF so I can put on a DTM carbon airbox, so the ecu controls the air mixture? thanks
+          #collapse24.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, yes the MAF (Mass Airflow Meter) can be thrown away if the hardware allows it, as some setups have the MAF built into the inlet manifold. The MegaSquirt ECU's have a built in Manifold Air Pressure sensor (known as Speed Density mode) which you can use or you can use a Throttle position pot (that's what's called Alpha_n mode). It can even be adapted to use a MAF if it has a 0-5V output signal (e.g. a Ford item) so yes, the restriction of a MAF can be removed if you so desire, Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse25')
+                | Hello, how much is shipping to Greece? I know everybody asks you if this ECU will work on their car, so just to make sure, I'll do the same. I have a Renault 19 1.8lt 16V and I want to install ITB's. What else will I need besides what you're selling to make this ECU work on my car? Could you have it programmed if I gave you all the info you need? And finally, if I have a professional ECU tuner have a look at it, could he get the best out of it? thank you (for your patience).
+          #collapse25.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, the postage to Greece is £15, that is fully insured postage that has to be signed for. You'll need all the relevant sensors that a normal EFI setup needs (Air and Coolant Temperature Sensors, a Lambda sensor, a throttle position sensor and compatable trigger input from a coil / crank sensor or a distributor) If you want to keep the original sensors that came with your setup you can. There are instructions on the CD that I supply on how to use different sensors with the ECU and the software or I can do it for you if you give me the information, see here. I can't preprogram an ECU that's ready to be used without tuning. I can pre-load the ECU with settings for your engine with a base map, etc, but it will need tuning for your setup. If you can find someone on the MSExtra forum that has an engine the same as yours you may find that a lot of help, but the best thing to do is to read the manuals I've compiled and learn how to do it from scratch, its all part of the fun of it. Any good professional tuner should be able to tune your engine with an MS ECU, but you'll need to take the software (supplied on the CD) with you for the tuner to use. Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse26')
+                | Hi there, do you build these in house or do you get them made elsewhere? We have an on (and on and on) going project that requires radically re jigging the Zetec engine and then running a supercharger on top. I looked at the old V2.2 MS units about 18 months ago and they looked very good value and the spec/drivers pretty impressive to say the least. If your building them can you supply the ECU only as we have full loom build facilities of our own. Thanks.
+          #collapse26.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, I build the ECU's myself in my workshop, I'm an Electronics Engineer with over 30 years of experience. I will supply them without a wiring harness if that's how you want it. The upgrades I do are the uprated Idle Valve output (FET) so it can directly drive 3 Amps to the valve, this allows us to control Ford valves and the like in PWM mode. The original transistor simply isn't up to the job of driving an idle valve directly. I can also offer numerous spark output and input options, etc. Basically I'm selling the ECU's ready for use so the end user doesn't have to modify them, Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse27')
+                | Hello! This is a great system! Can I use it on a motorbike? I have a Honda GL1000ccm, flat four engine, 61kW@7500rpm, watercooled, waste spark ignition with two coils (so each of the two coils supplies two cylinders). But the ignition system is fine, I only need to control fuel. I can build an intake manifold as I am a good welder. Problem could be that I have no sensors on the engine, so You would have to tell me what I need to make it working (sensors, throttle plate, fuel pump, injectors, wiring diagram). I have 12V negative ground electricity. Thank You Ray
+          #collapse27.panel-collapse.collapse
+            .panel-body
+              p
+                | Ok, thats a great project. Fuel control is easy to do, well its not too bad lets put it that way. Take a look at the drawings section, there are drawings in there for you to download that would help you get a feel for what is needed. But basically you need a lambda sensor, a throttle position pot (TPS not needed if you have a plenum but you need one for ITB's), a high pressure fuel pump capable of around 50psi, 4 injectors, an air temperature sensor, a coolant sensor, fuel pressure regulator and fuel rails. I would think the easiest way would be to get them from a scrap bike with injection already fitted, Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse28')
+                | Is this ECU a plug'n play system for Peugeot engines (both MI-16 and 106 GTI)? What other modifications are needed to put it in a Peugeot engine?
+          #collapse28.panel-collapse.collapse
+            .panel-body
+              p
+                | Hi there, we now have plug-n-play ECU's for Peugeots and several other manufactourers. They all need to be tuned for your setup, etc, I supply the software to do this with and it's not too hard to do. I have fitted MS's to a few Pug 106's and to several RV8's and Zetecs, (as well as other cars) and none of the same engined cars have the same map in it as every engine is different, the base map should help get you running but they need to be tuned for your setup. The 106 should have a suitable 60-2 wheel as standard, we can use that to feed all of the MS ECUs, Phil
+        .panel.panel-default
+          .panel-heading
+            h4.panel-title
+              a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapse29')
+                | How do I tell if my distributor's sensor is a Hall Effect sensor or a Variable Reluctor (VR) sensor?
+          #collapse29.panel-collapse.collapse
+            .panel-body
+              p
+                | Generally if you're sensor has 3 wires then it is a hall sensor, if it has 2 wires inside a screened cable (cable with a braided casing around the outside of it under the insulation) it is likely to be a VR sensor. To check this you can turn the ignition on, ensure the sensor and original ECU, etc, is still connected as it should be, and slowly turn the engine over (remove the distributor cap so it doesn't spark) If the voltage switches from 5 or 12V to ground (0V) then you have a hall sensor. It is important to know if the voltage is 5 or 12V when it see's a tooth or if its see's a gap between the teeth.
+                | If you get no voltage then re-assemble the cap and start the engine. Measure the voltage from the sensor at idle (be very very careful!!) if it reads approx 0.5Vac then you have a VR sensor. Increase the RPM to 2500 and see if the voltage increases, this means you have a VR sensor. Most VR sensors have a small round nipple in the middle on the end of the sensor where it looks at the teeth, this is the core. Hall sensors generally do not have this.
+                | For instructions on how to set up your distributor when using the MS-Extra ECU see here
+    style.
+      .faqHeader {
+      font-size: 27px;
+      margin: 20px;
+      }
+      .panel-heading [data-toggle="collapse"]:after {
+      font-family: 'FontAwesome';
+      content: "\f04b";
+      float: right;
+      color: #F58723;
+      font-size: 18px;
+      line-height: 22px;
+      /* rotate "play" icon from > (right arrow) to down arrow */
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      }
+      .panel-heading [data-toggle="collapse"].collapsed:after {
+      /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      color: #454444;
+      }
