@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-light">
+<head>
+    <base href="#">
+    <title>ExtraEFI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/img/favicon.png" sizes="16x16 32x32 48x48 64x64" type="image/png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- View-specific stylesheets.-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/trendy.css" rel="stylesheet">
+    <link href="assets/css/authy.css" rel="stylesheet">
+    <link href="assets/css/source-sans-pro.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-image-gallery.min.css" rel="stylesheet">
+</head>
+<body class="h-full"><a href="mailto:phil@extraefi.co.uk">
+    <div class="w-full m-t-md m-b-md text-center hidden-xs hidden">
+        <h4 class="m-none">Click here to email me if you have any questions</h4>
+    </div></a>
+<div class="w-full bg-dark m-t-xxl">
+    <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse navbar-straight">
+            <div class="container-fluid">
+                <div class="w-auto-xs">
+                    <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="pull-left"><img src="assets/img/new_logo.svg" style="margin:25px 10px;" class="h-sm"/></a>
+                </div>
+                <div id="collapsed-nav" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Products <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="megasquirt_ecus.html">Megasquirt ECU's</a></li>
+                                <li><a href="RV8_kits.html">Rover V8 ECU bundles/PNP</a></li>
+                                <li><a href="MX5_ecus.html">Mazda MX5 ECU's </a></li>
+                                <li><a href="accessories.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services.html">Services</a></li>
+                        <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Support <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="support.html">FAQs</a></li>
+                                <li><a href="services.html">Videos</a></li>
+                                <li><a href="files.html">Downloads</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="links.html">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="bg-white wrapper m-t-xl m-b-xl">
+        <p>There can be a lot of mystery surrounding the world of Electronic Fuel Injection (EFI), but it&#39;s actually quite a straight forward system if broken down to it&#39;s basic components. First off lets consider the hardware side of things:</p>
+
+        <p><strong>EFI Hardware</strong></p>
+
+        <p><img src="http://www.extraefi.co.uk/Drawings/fuel_basic_hardware.JPG" style="height:569px; width:928px" /></p>
+
+
+        <p>The High Pressure Fuel Pump is usually gravity fed with fuel as an inline pump or immersed in the fuel inside the fuel tank. This creates enough fuel pressure so the injectors spray fuel (helping it to atomize) when they open rather than a dribble of fuel. Pressure in the system can vary from manufacturers but 36psi - 55 psi is roughly correct. 43 psi is most the most common pressure. The fuel pressure is actually controlled by the Fuel Pressure Regulator, the fuel pump supplies enough fuel under pressure for the regulator to maintain the pressure smoothly. The regulator has a pressure reference pipe attached to the manifold so it sees manifold pressure (MAP) this is to keep the pressure across the injectors at a constant. So if you consider that one end of the injector will be attached to the manifold it will see manifold pressure. So when it opens the fuel inside it will see fuel pressure from the fuel pressure regulator and manifold pressure. As there will be a vacuum in the manifold the pressure across the injector will be greater than the fuel pressure. So the fuel pressure is controlled by the regulator. As manifold vacuum increases to maintain a constant fuel pressure across the injector. This is important for the ECU, as it needs a constant pressure to ensure that any given opening time will allow the same amount of fuel to flow under all conditions:</p>
+
+        <p><img src="http://www.extraefi.co.uk/Drawings/reg_injector.JPG" style="height:434px; width:743px" /></p>
+
+        <p>The Fuel Return Line is not under pressure, it is simply the excess fuel that the pump has supplied that the regulator didn&#39;t need to maintain its required pressure. Some Fuel Rails are large in diameter and are there to hold an amount of fuel inside so that when the injectors open there&#39;s enough fuel to feed them and to keep the pressure from falling, it&#39;s like a buffer.</p>
+
+        <p>The fuel tank can have an integral pre-filter and sometimes an integral pump. If the fuel tank is from a carb engine (not EFI) then you&#39;ll need to fit a Swirl Pot and a low pressure fuel pump (low pressure fuel pumps are usually fitted to carb setups), as during cornering or low fuel levels the fuel line out of the tank may not be in the fuel. This causes air to enter the fuel line and the injectors will fire air bubbles at the cylinders rather than fuel, this is felt by a miss fire. Swirl Pots are available from local manufactures or can be specially made, etc.</p>
+
+        <p><img src="http://www.extraefi.co.uk/Drawings/swirlpt_hardware.JPG" style="height:434px; width:743px" /></p>
+
+        <p><strong>EFI Sensors and Injectors</strong></p>
+
+        <p>So that is the basics of the hardware, next are the sensors for the ECU (Engine Control Unit / Engine Management Unit, or what ever you wish to call it.) For fuel control we need to know what the incoming air temperature is, what the engine temperature is, what the throttle is doing and what the manifold pressure is. Its also handy to know what the Air to Fuel ratio from the exhaust is reading (AFR) as this tells us a great deal about how efficient we are running. To tell us this we need:</p>
+
+        <p><strong>Intake Air Temperature Sensor (IAT)</strong>&nbsp;<br />
+            This sensor changes resistance with temperature (increase in temperature - decreases resistance) and the ECU uses the information to calculate the density of the incoming air (air density changes with temperature and pressure). The calculations are fixed internally so there&#39;s little to worry about, but it ensures that that the ECU supplies the correct fueling across all incoming air temperatures. So as the temperature increases, air is less dense, the fueling will decrease to maintain the same AFR and visa-versa for a drop in temperature. Some ECU&#39;s also reduce ignition advance under load if the air temperature gets too high, this is due to detonation being more likely at higher intake temps.</p>
+
+        <p><strong>Coolant Temperature Sensor (CLT)</strong>&nbsp;<br />
+            This sensor changes resistance with temperature (increase in temperature - decreases resistance), the ECU uses the information to add extra fuel (Warmup Enrichment) when the engine isn&#39;t up to operating temperature, as a cold engine will need a richer mixture to keep it running smoothly. The ECU also uses the coolant sensor as information to control the idle valve to allow a little more air in so as to increase the idle RPM whilst the engine is cold. Some ECU&#39;s add some ignition advance when the engine is colder as this aids warmup times and keeps the engine running a little faster at idle.(A cold engine is less likely to detonate so a little advance won&#39;t hurt)</p>
+
+        <p><strong>Throttle Position Sensor (TPS)</strong>&nbsp;<br />
+            This is basically a 3 pinned sensor which gives a variable voltage out as the throttle angle changes. It has 5V to one side of it, ground to the other and the output pin increases from approx. 0V to approx. 5V as the throttle angle increases. If you have individual throttle bodies or a very lumpy cam then this is used to tell the ECU what load the engine is under, but with a plenum and a single throttle intake usually this is only needed to tell the ECU that you have suddenly pressed the throttle and it needs to squirt some extra fuel in to compensate &quot;Accel Enrichment&quot;. This is also used by the ECU to tell that your foot is on the floor during cranking, this means that the ECU goes into &quot;Flood Clear&quot; mode so it doesn&#39;t squirt any fuel during cranking to clear a flooded engine.</p>
+
+        <p><strong>Manifold Air Pressure Sensor (MAP)</strong><br />
+            This sensor is built into the MegaSquirt ECU, it tells the ECU what load the engine is under. The manifold will generally be under vacuum, the larger the vacuum the less load the engine is under. Once it reaches atmospheric pressure (on a NA engine) this means the engine is taking in as much air as it can so it is under maximum load. Any boost is detected by the MAP sensor too, so again, this is load related, the more boost pressure the larger the load on the engine. Some engines use a Manifold Air Flow Meter (MAF), this basically detects air flow into the engine and is used to tell the ECU the load on the engine, MegaSquirt can use this but it isn&#39;t recommended, we recommend using the built in MAP sensor and throwing the MAF sensor away if you have one. In MegaSquirt we measure the MAP in KPa, approx. 100KPa = atmosphere (depending on height above sea level), anything lower is a vacuum. Anything higher that atmosphere (100KPa) is boost. Out of interest 6.8KPa = 1PSI, so 168KPa would be 68KPa above atmosphere so 68 / 6.8 = 10PSI of boost.</p>
+
+        <p><strong>Lambda Sensor (O2)</strong><br />
+            This tells the ECU what the mixture is in the exhaust. This information is used by the ECU to fine tune the fueling a little from the base fuel map. (Generally it can only alter the mixture by approx. 10%) If using a narrow band sensor (this is a standard type) then the only real information the sensor gives is that the engine is running lean or rich of stoichiometric (14.7 parts of Air to 1 part of Fuel AFR). The ECU doesn&#39;t know exactly how far away from 14.7AFR or what the actual AFR is, just that its rich or lean of that point, so if it is rich it will reduce the fuel by a little and check again, if its still rich it removes a little more fuel and checks again, etc, etc until it becomes lean of 14.7 and it will then increase fuel a little and check again, etc. This closed loop operation usually only operates at light loads where efficiency is important. When using a Wideband Lambda sensor (such as an Innovates LC-1) the signal from the lambda controller to the ECU relates to the actual AFR (not just 14.7), so the ECU will know exactly what the mixture is doing. This allows the mixture to be controlled a little better under heavier loads where an AFR of 12.5 - 13.0 is needed to produce maximum power, a narrow band lambda simply would not be of any use at this AFR so the ECU would not be adjusting the mixture under load.</p>
+
+        <p><strong>Fuel Injectors</strong><br />
+            These are opened by the ECU to add fuel to the cylinders, the longer they are opened for, the more fuel is added. As explained above, the fuel pressure is regulated so if a pulse of say 1.5mS is applied to the injector the same amount of fuel flows from the injector under all load conditions. An injector is rated by its flow in either lbs/hr or cc/min, this is usually measured with a fuel pressure of 43PSI.<br />
+            <br />
+            <strong>1 lb/hr ~ 10.5cc/min</strong><br />
+            Don&#39;t think that you simply select the biggest injectors you can find, as this would be wrong. If an injector is selected that is too big you wont get a good steady idle or a steady cruise, as a small increase in the pulse sent to the injector from the ECU will have a large change in fuel. It then becomes difficult to control the AFR making for a lumpy idle and cruise, and it can be difficult if not impossible to get through emission testing. The injector is basically a solenoid which has 12V ignition feed to one side of it and the ECU switches the other side to ground in order for it to make it open and therefore fuel flow through it. There is no positive or negative to an injector so they can be connected either way round, but it&#39;s a good idea to keep all of them wired the same on your setup to aid fault finding, etc.</p>
+
+        <p><strong>A rough guide to selecting injectors is:</strong><br />
+            <br />
+            <strong>InjectorSize = (HorsePower * BSFC) / (#Injectors * DutyCycle)&nbsp;</strong><br />
+            BSFC = brake specific fuel consumption. This is usually between 0.42 and 0.58 at wide open throttle. Normally aspirated engines with efficient combustion processes are at the lower end of the BSFC scale ~0.45, where as a supercharged engine tend to be towards the higher end ~0.55.<br />
+            Duty Cycle is the amount of time the injector is opened when compared to the amount of time it has available to fire between engine cycles. A max duty cycle of 85% is highly recommended, 100% is the absolute maximum, but is not recommended as you are at the very limit of your fueling, don&#39;t feel you can cheat this, you can&#39;t!<br />
+            If your not sure then select a set of injectors from an engine that has the same amount of cylinders you have and that produces a similar amount of BHP.</p>
+
+        <p>Selecting the correct size injectors isn&#39;t as hard as you may think. If you already have an EFI setup then simply retain those unless you are about to increase the BHP dramatically. Don&#39;t think that you can simply increase fuel pressure to increase your injectors flow rate, as there is a limit that your pump and pipes and injectors can take. Also fuel flow doesn&#39;t increase at the same rate as pressure, flow increases at the square root of increase of fuel pressure, so you&#39;ll need a massive increase in fuel pressure to gain much from an injector.</p>
+
+        <p><strong>Pulse Width (PW)</strong>&nbsp;- The length of time the ECU holds the injector to ground is known as the Pulse Width (PW). So the longer the PW (time the injector is held open in mSec) the more fuel flows.&nbsp;</p>
+
+        <p><strong>Pulse Width Modulation (PWM)</strong>&nbsp;-<strong>&nbsp;</strong>Injectors are also put into 2 categories, Low-Impedance and Hi-Impedance.&nbsp;<br />
+            <br />
+            <strong>Lo-Impedance &lt; 3 Ohms<br />
+                <br />
+                Hi-Impedance approx. 10-15 Ohms&nbsp;</strong><br />
+            <br />
+            A lo-Impedance injector will need some adjusting of the Pulse Width Modulation (PWM) to stop it burning out, where as a Hi-Impedance injectors needs no such control. Another way around it is to add a series resistor in line with each lo-impedance injector, making them hi-impedance.&nbsp;<br />
+            To understand what PWM is we need to concider that the injector is switched on and off very very fast, so fast, in fact, that the injector doesn&#39;t shut, it just has no current flowing through it for a few uSecs. This allows the time current flows through it to be limitted, stopping it burning out. The injectors are opened initially with a longer time pulse, Injector Opening Threshold, then they are maintained open with pulses untill its time to shut them. (i.e. the PW time ends)<br />
+            <br />
+            <em><strong>Note: A hi-impedance injector is simply turned on at the start of the PW and then off at the end, so the PWM would be 100%.</strong></em></p>
+
+        <p><img src="http://www.extraefi.co.uk/Drawings/pwm.JPG" style="height:339px; width:599px" /></p>
+    </div>
+    <div class="container">
+        <footer class="bg-white m-t-xl wrapper m-b-xl">
+            <p class="m-none">Copyright &copy; <a href="#">ExtraEFI.co.uk          |  2015 </a><span class="pull-right"><a href="terms_of_use.html">Terms of Use</a> - Design by Sam Buckingham &amp; Joshua Baldwin</span></p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="assets/js/bootstrap-image-gallery.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+</body>
+</html>
