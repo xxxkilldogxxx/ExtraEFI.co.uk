@@ -17,6 +17,7 @@
     "gulp-sourcemaps": "^1.5.2",
     "jade": "^1.11.0",
     "jquery": "^2.1.4",
+    "pdf.js": "^0.1.0",
     "trendy": "git+ssh://git@github.com:jwrb/trendy.git#golf-companion"
   },
   "devDependencies": {},

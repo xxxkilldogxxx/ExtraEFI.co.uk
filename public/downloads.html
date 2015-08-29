@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-light">
+  <head>
+    <base href="#">
+    <title>ExtraEFI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/img/favicon.png" sizes="16x16 32x32 48x48 64x64" type="image/png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- View-specific stylesheets.-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/trendy.css" rel="stylesheet">
+    <link href="assets/css/authy.css" rel="stylesheet">
+    <link href="assets/css/source-sans-pro.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-image-gallery.min.css" rel="stylesheet">
+  </head>
+  <body class="h-full"><a href="mailto:phil@extraefi.co.uk">
+      <div class="w-full m-t-md m-b-md text-center hidden-xs hidden">
+        <h4 class="m-none">Click here to email me if you have any questions</h4>
+      </div></a>
+    <div class="w-full bg-dark m-t-xxl">
+      <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse navbar-straight">
+          <div class="container-fluid">
+            <div class="w-auto-xs">
+              <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="pull-left"><img src="assets/img/new_logo.svg" style="margin:25px 10px;" class="h-sm"/></a>
+            </div>
+            <div id="collapsed-nav" class="collapse navbar-collapse navbar-right">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Products <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="megasquirt_ecus.html">Megasquirt ECU's</a></li>
+                    <li><a href="RV8_kits.html">Rover V8 ECU bundles/PNP</a></li>
+                    <li><a href="MX5_ecus.html">Mazda MX5 ECU's </a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                  </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Support <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="FAQ.html">FAQs</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="links.html">Links</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="bg-white wrapper m-t-xl m-b-xl flex">
+        <h3 class="m-none text-info flex flex-fill">Downloads</h3>
+        <ul role="tablist" style="margin-top: -6px;margin-bottom: -6px;" class="nav nav-pills pull-right">
+          <li role="presentation" class="active"><a href="#setup" aria-controls="efi" role="tab" data-toggle="tab">Support</a></li>
+          <li role="presentation"><a href="#diagrams" aria-controls="diagrams" role="tab" data-toggle="tab">Diagrams</a></li>
+          <li role="presentation"><a href="#software" aria-controls="software" role="tab" data-toggle="tab">Software</a></li>
+          <li role="presentation"><a href="#firmware" aria-controls="firmware" role="tab" data-toggle="tab">Firmware</a></li>
+        </ul>
+      </div>
+      <div class="bg-white wrapper m-t-xl m-b-xl">
+        <div class="tab-content">
+          <div id="setup" role="tabpanel" class="tab-pane active">
+            <h3 class="text-center">Basic EFI and Ignition Explained</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12 m-t-md"><a href="http://www.extraefi.co.uk/basic_efi.htm" class="btn btn-primary btn-block">Basic Fuel Injection Explained</a></div>
+              <div class="col-md-4 col-sm-6 col-xs-12 m-t-md"><a href="http://www.extraefi.co.uk/ignition_basic.htm" class="btn btn-primary btn-block">Basic Ignition Control Explained</a></div>
+              <div class="col-md-4 col-sm-6 col-xs-12 m-t-md"><a href="http://www.extraefi.co.uk/sequential_fuel.html" class="btn btn-primary btn-block">Sequential Fuel Injection Explained</a></div>
+            </div>
+          </div>
+          <div id="diagrams" role="tabpanel" class="tab-pane">
+            <ul role="tablist" style="margin-top: -6px;margin-bottom: -6px;" class="nav nav-pills nav-justified">
+              <li role="presentation" class="active"><a href="#diagram-general" aria-controls="diagram-general" role="tab" data-toggle="tab">General</a></li>
+              <li role="presentation"><a href="#diagram-semi" aria-controls="diagram-semi" role="tab" data-toggle="tab">Semi-Fully Sequential Fuel</a></li>
+              <li role="presentation"><a href="#diagram-ignition" aria-controls="diagram-ignition" role="tab" data-toggle="tab">Ignition</a></li>
+              <li role="presentation"><a href="#diagram-add" aria-controls="diagram-add" role="tab" data-toggle="tab">Additional</a></li>
+              <li role="presentation"><a href="#diagram-engine" aria-controls="diagram-engine" role="tab" data-toggle="tab">Engine</a></li>
+            </ul>
+            <div class="tab-content w-full">
+              <div id="diagram-general" role="tabpanel" class="tab-pane active"></div>
+              <div id="diagram-semi" role="tabpanel" class="tab-pane"></div>
+              <div id="diagram-ignition" role="tabpanel" class="tab-pane"></div>
+              <div id="diagram-add" role="tabpanel" class="tab-pane"></div>
+              <div id="diagram-engine" role="tabpanel" class="tab-pane"></div>
+            </div>
+          </div>
+          <div id="software" role="tabpanel" class="tab-pane">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <p><strong>ExtraEFI CD<br>(virtually everything you need is here, including the manual, firmware, <br>log viewer, etc):</strong></p>
+                <p><em><strong>If you are unsure of what you need, start with a CD for MS1, MS2 or MS3! <br>(Please note: This is supplied on a CD with each ECU)</strong></em><br>Code History for ExtraEFI - <br>Up to Feb 2012<strong> "V2.1.0p"</strong> for normal batch fired ECUs or <strong>"V3.003T"</strong> for semi-seq<br>Between Feb 2012 to Feb 2014 use <strong>"Release V3.2.1"</strong> for ALL MS2 ECUs<br>Between March 2014 and Oct 2014 use <strong>Release V3.3.1a</strong> for MS2 ECUs<br>From Nov 2014 use "<strong>Release V3.3.3</strong>" for all MS2 ECUs</p>
+                <p>- See more at: http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf</p>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <p><a href="http://www.extraefi.co.uk/software/CD_for_029y4.zip">CD for MS1-Extra 029y4 Code</a> - Current</p>
+                <p><a href="http://www.extraefi.co.uk/software/CD_for_MS2_V2.1.0.zip">CD for MS2-Extra Release V2.1.0</a> - OLD</p>
+                <p><a href="http://www.extraefi.co.uk/software/CD_for_MS2_V3.00t.zip">CD for MS2-Extra V3.003T</a> - OLD</p>
+                <p><a href="http://www.extraefi.co.uk/software/CD_for_MS2_V3.2.1.zip">CD for MS2-Extra Release V3.2.1</a> - OLD</p>
+                <p><a href="http://www.extraefi.co.uk/software/CD_for_MS2_V3.3.3.zip">CD for <strong>MS2</strong>-Extra Release V3.3.3</a> - Current</p>
+                <p><a href="http://www.extraefi.co.uk/Drawings/PDF_Files/MX5_PnP_CD.zip"><strong>MX5 PnP</strong> CD</a> - Current</p>
+                <p><a href="http://www.extraefi.co.uk/software/CD_for_MS3.zip">CD for MS3</a> V1 - Old</p>
+                <p><a href="http://www.extraefi.co.uk/MS3_CD_V1.3.3.zip">CD for <strong>MS3</strong> V1.3.3</a> - Current</p>
+                <p>- See more at: http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf</p>
+              </div>
+            </div>
+          </div>
+          <div id="firmware" role="tabpanel" class="tab-pane">
+            <h3 class="text-center">ECU Firmware</h3>
+            <h4 class="text-danger">Please read the Important Notes before installing these! - See more <a href="http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf">here</a></h4>
+            <p><a href="http://www.extraefi.co.uk/Drawings/PDF_Files/MS1_Reflash.pdf"><strong>MS1-Extra Important notes before upgrading!</strong></a></p>
+            <p><a href="http://www.extraefi.co.uk/software/029y4.zip">MS1-Extra Code 029y4</a> - Current</p>
+            <p><a href="http://www.extraefi.co.uk/Drawings/PDF_Files/MS2_Reflash.pdf"><strong>MS2-Extra Important notes before upgrading!</strong></a></p>
+            <p><a href="http://www.extraefi.co.uk/software/ms2extra_2.1.0_release.zip">MS2-Extra V2.1.0</a> - Old<br><a href="http://www.extraefi.co.uk/software/MS2extraSeq_303t_20100413.zip">MS2-Extra V3.003T</a> - Old<br><a href="http://www.extraefi.co.uk/software/MS2Extra_release_3.2.1.zip">MS2-Extra Release V3.2.1</a> - Old<br><a href="http://www.extraefi.co.uk/software/ms2extra_3.3.1a_release.zip">MS2-Extra Release V3.3.1a</a> - Old</p>
+            <p><a href="http://www.extraefi.co.uk/software/ms2extra_3.3.3_release.zip">MS2-Extra Release V3.3.3</a> - Current</p>
+            <p><strong>MS3 Important notes before upgrading!</strong></p>
+            <p><a href="http://www.extraefi.co.uk/software/ms3-release-1.zip">MS3 Release Code V1</a> - Old</p>
+            <p><a href="http://www.extraefi.co.uk/software/CD_for_MS3.zip">MS3 Release Code V1.3.3</a> - Current</p>
+            <p>- See more at: http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="bg-white m-t-xl wrapper m-b-xl">
+        <p class="m-none">Copyright &copy; <a href="#">ExtraEFI.co.uk          |  2015 </a><span class="pull-right"><a href="terms_of_use.html">Terms of Use</a> - Design by Sam Buckingham &amp; Joshua Baldwin</span></p>
+      </footer>
+    </div>
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="assets/js/bootstrap-image-gallery.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+  </body>
+</html>

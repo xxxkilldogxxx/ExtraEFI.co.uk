@@ -1,0 +1,84 @@
+extends ./layouts/default
+
+block content
+  .container
+    .bg-white.wrapper.m-t-xl.m-b-xl
+      p
+        | If you haven't already done so, install 
+        strong Tuner Studio
+        |  onto your laptop, downloadable from 
+        a(href='http://tunerstudio.com/index.php/downloads')
+          strong here
+        |  this is also on the CD I provide, but that may need updating, which is done automatically. This is the latest tuning software for MegaSquirt products and has a LOT of features that MegaTune (MT) doesn't have. It is similar in layout and function to MT, so that MT users can adapt to it easily.
+      p Once the install has finished you will be presented with making a new project:
+      p
+        img(alt='TS Install', src='http://www.extraefi.co.uk/assets/img/Drawings/TS_Install1.png', style='height:444px; width:370px')
+      p
+        | Project name can be what ever you want, I recommend calling it MS1 or MS2, etc, incase you ever upgrade, then you can simply add another project to Tuner Studio and select either one when you want. Alternativley call it by the car, e.g. CobraMS2, etc.
+      p Leave the Project Directory as it is, this keeps it as a standard install.
+      p
+        | ECU Definition is the ECU that it's going to be used on. If you already have the ECU powered up and installed then connect the comms up and select Detect. This will interigate the ECU and select the code from a list in Tuner Studio. If you have the actual ini file for your code (e.g. your using a new code thats in beta) then select the ini location by pressing the 
+        strong ...
+        |  button. If your starting for the first time with one of my ECUs then select:
+        br
+        br
+        strong For an MS1 ECU, select "MS1/Extra Format 029y3"
+      p
+        strong
+          | For an MS2 or an MS3 I would select "Detect", (with the ECU powered up and connected!) this will search the EFI server for your ECUs ini file using the Internet. 
+          br
+          br
+          | If you dont have the internet or the ECU connected then use the CD provided with the ECU, it will be in "Tuning Software/ms2extra_*.*.*_release/" Then select "OTHER" and press the ",,," button and chose your ini file from the CD or downloaded directory
+      p
+        strong
+          | For old MS2 ECU's some of the codes may not be in Tuner Studio. For example, the Release code V3.2.1 has yet to be part of the install of Tuner Studio. Its available on the
+          a(href='downloads.htms')  Downloads page HERE
+      p
+        strong
+          em
+            | HISTORY OF CODES USED by ExtraEFI for MS2:
+            br
+            br
+            | All MS2 ECUs untill Mid 2009 I used V2.0.1
+            br
+            br
+            | Mid 2009 to Jan 2011 I used V2.1.0.p
+            br
+            br
+            | Feb 2012 to Jan 2014 I use Release code V3.2.1
+            br
+            br
+            | Jan 2014 to Nov 2014 Release code V3.3.1a
+            br
+            br
+            | Dec 2014 to date Release code V3.3.3
+      p HISTORY OF CODES USED by ExtraEFI for MS3:
+      p July 2012 to Dec 2012 use Release V1.1.1
+      p Dec 2012 to September 2013 use Release V1.2.0
+      p September 2013 to Nov 2014 use Release V1.3.0
+      p Nov 2014 to date use Release V1.3.3
+      p Next you need to select a few options:
+      p
+        img(src='http://www.extraefi.co.uk/Drawings/TS_Install2.png', style='height:479px; width:468px')
+      p If you have a Wideband Lambda or a standard narrow band lambda.
+      p
+        | You can also select Celcius rather than Fareinheit if you wish here. The rest should be left as the defaults. Don't worry, you can change things later.
+      p
+        img(src='http://www.extraefi.co.uk/Drawings/TS_Install3.png', style='height:444px; width:370px')
+      p
+        | Then you can select the baud rate and com port your using and even test it is working, as long as the ECU is powered up and connected to the laptop. Note that MS2 and MS3 use 115200 Baud rate and MS1 uses 9600.
+      p
+        img(src='http://www.extraefi.co.uk/Drawings/TS_Install4.png', style='height:444px; width:370px')
+      p
+        | Lastly you can select the style of display you want to use, the default is pretty good to be honest, but you can use what you want, you can even make your own!!
+      p
+        | Once its all done you can change any settings or add another project (so if you have more than one car running MS) simply by selecting File - Project and select Project properties, etc. You can also select different gauges by right clicking on the screen and selecting a new one.
+      p
+        img(src='http://www.extraefi.co.uk/Drawings/Dash1.jpg', style='height:350px; width:400px')
+        img(src='http://www.extraefi.co.uk/Drawings/Dash2.jpg', style='height:350px; width:400px')
+      p
+        | Please Note: Unless your ECU is connected then the Tune File in Tuner Studio will be meaningless! 
+        br
+        | It will only load the basic configuration from the ECU once it connects.
+      p
+        a(href='http://www.extraefi.co.uk/Drawings/PDF_Files/Tuner_Studio_Setup.pdf', target='_blank') PDF File of this Page

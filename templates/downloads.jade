@@ -1,0 +1,164 @@
+extends ./layouts/default
+
+block content
+  .container
+    .bg-white.wrapper.m-t-xl.m-b-xl.flex
+      h3.m-none.text-info.flex.flex-fill Downloads
+      ul.nav.nav-pills.pull-right(role='tablist', style='margin-top: -6px;margin-bottom: -6px;')
+        li.active(role='presentation')
+          a(href='#setup', aria-controls='efi', role='tab', data-toggle='tab') Support
+        li(role='presentation')
+          a(href='#diagrams', aria-controls='diagrams', role='tab', data-toggle='tab') Diagrams
+        li(role='presentation')
+          a(href='#software', aria-controls='software', role='tab', data-toggle='tab') Software
+        li(role='presentation')
+          a(href='#firmware', aria-controls='firmware', role='tab', data-toggle='tab') Firmware
+    .bg-white.wrapper.m-t-xl.m-b-xl
+    
+      .tab-content
+        #setup.tab-pane.active(role='tabpanel')
+          h3.text-center Basic EFI and Ignition Explained
+          .row
+            .col-md-4.col-sm-6.col-xs-12.m-t-md
+              a.btn.btn-primary.btn-block(href='http://www.extraefi.co.uk/basic_efi.htm') Basic Fuel Injection Explained
+            .col-md-4.col-sm-6.col-xs-12.m-t-md
+              a.btn.btn-primary.btn-block(href='http://www.extraefi.co.uk/ignition_basic.htm') Basic Ignition Control Explained
+            .col-md-4.col-sm-6.col-xs-12.m-t-md
+              a.btn.btn-primary.btn-block(href='http://www.extraefi.co.uk/sequential_fuel.html') Sequential Fuel Injection Explained
+
+        #diagrams.tab-pane(role='tabpanel')
+          ul.nav.nav-pills.nav-justified(role='tablist', style='margin-top: -6px;margin-bottom: -6px;')
+            li.active(role='presentation')
+              a(href='#diagram-general', aria-controls='diagram-general', role='tab', data-toggle='tab') General
+            li(role='presentation')
+              a(href='#diagram-semi', aria-controls='diagram-semi', role='tab', data-toggle='tab') Semi-Fully Sequential Fuel
+            li(role='presentation')
+              a(href='#diagram-ignition', aria-controls='diagram-ignition', role='tab', data-toggle='tab') Ignition
+            li(role='presentation')
+              a(href='#diagram-add', aria-controls='diagram-add', role='tab', data-toggle='tab') Additional
+            li(role='presentation')
+              a(href='#diagram-engine', aria-controls='diagram-engine', role='tab', data-toggle='tab') Engine
+          .tab-content.w-full
+            #diagram-general.tab-pane.active(role='tabpanel')
+              
+            #diagram-semi.tab-pane(role='tabpanel')
+
+            #diagram-ignition.tab-pane(role='tabpanel')
+
+            #diagram-add.tab-pane(role='tabpanel')
+
+            #diagram-engine.tab-pane(role='tabpanel')
+              
+
+
+        #software.tab-pane(role='tabpanel')
+          .row
+            .col-md-6.col-xs-12
+              p
+                strong
+                  | ExtraEFI CD
+                  br
+                  | (virtually everything you need is here, including the manual, firmware, 
+                  br
+                  | log viewer, etc):
+              p
+                em
+                  strong
+                    | If you are unsure of what you need, start with a CD for MS1, MS2 or MS3! 
+                    br
+                    | (Please note: This is supplied on a CD with each ECU)
+                br
+                | Code History for ExtraEFI - 
+                br
+                | Up to Feb 2012
+                strong  "V2.1.0p"
+                |  for normal batch fired ECUs or 
+                strong "V3.003T"
+                |  for semi-seq
+                br
+                | Between Feb 2012 to Feb 2014 use 
+                strong "Release V3.2.1"
+                |  for ALL MS2 ECUs
+                br
+                | Between March 2014 and Oct 2014 use 
+                strong Release V3.3.1a
+                |  for MS2 ECUs
+                br
+                | From Nov 2014 use "
+                strong Release V3.3.3
+                | " for all MS2 ECUs
+              p - See more at: http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf
+
+            .col-md-6.col-xs-12
+              p
+                a(href='http://www.extraefi.co.uk/software/CD_for_029y4.zip') CD for MS1-Extra 029y4 Code
+                |  - Current
+              p
+                a(href='http://www.extraefi.co.uk/software/CD_for_MS2_V2.1.0.zip') CD for MS2-Extra Release V2.1.0
+                |  - OLD
+              p
+                a(href='http://www.extraefi.co.uk/software/CD_for_MS2_V3.00t.zip') CD for MS2-Extra V3.003T
+                |  - OLD
+              p
+                a(href='http://www.extraefi.co.uk/software/CD_for_MS2_V3.2.1.zip') CD for MS2-Extra Release V3.2.1
+                |  - OLD
+              p
+                a(href='http://www.extraefi.co.uk/software/CD_for_MS2_V3.3.3.zip')
+                  | CD for 
+                  strong MS2
+                  | -Extra Release V3.3.3
+                |  - Current
+              p
+                a(href='http://www.extraefi.co.uk/Drawings/PDF_Files/MX5_PnP_CD.zip')
+                  strong MX5 PnP
+                  |  CD
+                |  - Current
+              p
+                a(href='http://www.extraefi.co.uk/software/CD_for_MS3.zip') CD for MS3
+                |  V1 - Old
+              p
+                a(href='http://www.extraefi.co.uk/MS3_CD_V1.3.3.zip')
+                  | CD for 
+                  strong MS3
+                  |  V1.3.3
+                |  - Current
+              p - See more at: http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf
+
+
+        #firmware.tab-pane(role='tabpanel')
+          h3.text-center ECU Firmware
+          h4.text-danger Please read the Important Notes before installing these! - See more 
+            a(href='http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf') here
+          p
+            a(href='http://www.extraefi.co.uk/Drawings/PDF_Files/MS1_Reflash.pdf')
+              strong MS1-Extra Important notes before upgrading!
+          p
+            a(href='http://www.extraefi.co.uk/software/029y4.zip') MS1-Extra Code 029y4
+            |  - Current
+          p
+            a(href='http://www.extraefi.co.uk/Drawings/PDF_Files/MS2_Reflash.pdf')
+              strong MS2-Extra Important notes before upgrading!
+          p
+            a(href='http://www.extraefi.co.uk/software/ms2extra_2.1.0_release.zip') MS2-Extra V2.1.0
+            |  - Old
+            br
+            a(href='http://www.extraefi.co.uk/software/MS2extraSeq_303t_20100413.zip') MS2-Extra V3.003T
+            |  - Old
+            br
+            a(href='http://www.extraefi.co.uk/software/MS2Extra_release_3.2.1.zip') MS2-Extra Release V3.2.1
+            |  - Old
+            br
+            a(href='http://www.extraefi.co.uk/software/ms2extra_3.3.1a_release.zip') MS2-Extra Release V3.3.1a
+            |  - Old
+          p
+            a(href='http://www.extraefi.co.uk/software/ms2extra_3.3.3_release.zip') MS2-Extra Release V3.3.3
+            |  - Current
+          p
+            strong MS3 Important notes before upgrading!
+          p
+            a(href='http://www.extraefi.co.uk/software/ms3-release-1.zip') MS3 Release Code V1
+            |  - Old
+          p
+            a(href='http://www.extraefi.co.uk/software/CD_for_MS3.zip') MS3 Release Code V1.3.3
+            |  - Current
+          p - See more at: http://www.extraefi.co.uk/downloads.htm#sthash.eUNKB0Gk.dpuf
