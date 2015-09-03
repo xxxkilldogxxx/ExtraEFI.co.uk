@@ -15,7 +15,7 @@ var gulp = require('gulp')
 gulp.task('markup', function() {
   var LOCALS = {};
 
-  gulp.src('./templates/**/*.jade')
+  gulp.src('./templates/*.jade')
     .pipe(jade({
       pretty: true
       , locals: LOCALS

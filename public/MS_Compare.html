@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-light">
+  <head>
+    <base href="#">
+    <title>ExtraEFI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/img/favicon.png" sizes="16x16 32x32 48x48 64x64" type="image/png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- View-specific stylesheets.-->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/trendy.css" rel="stylesheet">
+    <link href="/assets/css/authy.css" rel="stylesheet">
+    <link href="/assets/css/source-sans-pro.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.css" rel="stylesheet">
+    <link href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-image-gallery.min.css" rel="stylesheet">
+    <link href="/assets/css/SpryCollapsiblePanel.css" rel="stylesheet">
+  </head>
+  <body class="h-full"><a href="mailto:phil@extraefi.co.uk">
+      <div class="w-full m-t-md m-b-md text-center hidden-xs hidden">
+        <h4 class="m-none">Click here to email me if you have any questions</h4>
+      </div></a>
+    <div class="w-full bg-dark m-t-xxl">
+      <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse navbar-straight">
+          <div class="container-fluid">
+            <div class="w-auto-xs">
+              <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="pull-left"><img src="/assets/img/new_logo.svg" style="margin:25px 10px;" class="h-sm"/></a>
+            </div>
+            <div id="collapsed-nav" class="collapse navbar-collapse navbar-right">
+              <ul class="nav navbar-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Products <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/MS_Compare.html">Megasquirt Comparisons</a></li>
+                    <li><a href="/MS_All_products.html">Megasquirt ECU's</a></li>
+                    <li><a href="/RV8_kits.html">Rover V8 ECU bundles/PNP</a></li>
+                    <li><a href="/MX5_ecus.html">Mazda MX5 ECU's </a></li>
+                    <li><a href="/accessories.html">Accessories</a></li>
+                  </ul>
+                </li>
+                <li><a href="/services.html">Services</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Support <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/support/FAQ.html">FAQs</a></li>
+                    <li><a href="/support/videos.html">Videos</a></li>
+                    <li><a href="/support/downloads.html">Downloads</a></li>
+                    <li><a href="mailto:phil@extraefi.co.uk">Contact</a></li>
+                  </ul>
+                </li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/feedback.html">Feedback</a></li>
+                <li><a href="/links.html">Links</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="bg-white wrapper m-t-xl m-b-xl">
+        <h3 class="m-none text-info flex flex-fill">ECU's Features &amp; Comparisons</h3>
+      </div>
+      <div class="bg-white wrapper m-t-xl m-b-xl">
+        <ul role="tablist" class="nav nav-pills nav-justified w-full">
+          <li role="presentation" class="active"><a href="#hardware" aria-controls="hardware" role="tab" data-toggle="tab">Hardware Compaisons</a></li>
+          <li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">Feature Compaisons</a></li>
+          <li role="presentation"><a href="#setup" aria-controls="setup" role="tab" data-toggle="tab">Standard Setup Compaisons</a></li>
+        </ul>
+        <div class="tab-content m-t-md">
+          <div id="hardware" role="tabpanel" class="tab-pane active">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Hardware:</th>
+                  <th>MS1</th>
+                  <th>MS2</th>
+                  <th>MS3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Number of Injector Channels capable of driving 6 injectors each</td>
+                  <td>2 channels</td>
+                  <td class="bg-light">Up to 4 <span class="text-danger">**</span></td>
+                  <td class="bg-light">Up to 8 <span class="text-danger">**</span></td>
+                </tr>
+                <tr>
+                  <td>Injector Channels with Lo-impedance capability</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Idle Valve Output for a 2 or 3 wired idle valve (PWM)</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Stepper Motor Idle Valve (4 Wired)</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Fuel Pump Relay Control</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Air Inlet Temperature, Coolant Temperature, Oxygen Sensor and TPS Inputs</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>WideBand and NarrowBand Lambda Compatable</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>21 PSI Built-in MAP Sensor</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Optional 38 PSI MAP sensor <span class="text-danger">***</span></td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Max number of VR sensor Input (Magnetic crank sensor), Hall or Points Input</td>
+                  <td class="bg-light">2 <span class="text-danger">****</span></td>
+                  <td class="bg-light">2 <span class="text-danger">****</span></td>
+                  <td class="bg-light">2 <span class="text-danger">****</span></td>
+                </tr>
+                <tr>
+                  <td>Spark Driver (Number added is dependant on your engine)</td>
+                  <td>Up to 6</td>
+                  <td>Up to 6</td>
+                  <td class="bg-light">Up to 8 <span class="text-danger">**</span></td>
+                </tr>
+                <tr>
+                  <td>RS232 Serial Comms</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>CAN Comms</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>USB Comms</td>
+                  <td>Yes (With suitable adaptor)</td>
+                  <td>Yes (With suitable adaptor)</td>
+                  <td>Yes (With suitable adaptor)</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Knock, Launch, NOS, Fuel/Spark Table switching Inputs <span class="text-danger">***</span></td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Spare Analogue Inputs <span class="text-danger">***</span></td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td class="bg-light">2 <span class="text-danger">(3 ***)</span></td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Cooling Fan Control, Boost Control and Tach Outputs <span class="text-danger">***</span></td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Water Injection (PWM) Output <span class="text-danger">***</span></td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>No</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b>IMPORTANT NOTES:</b></p>
+            <p><i>Marked with ONE <span class="text-danger">*</span>:</i></p>
+            <p>
+              MS2 and MS3 ECU's can be built with up to 4 injector channels. (Anything over 2 injector channels
+              would need high impedance injectors only.)
+            </p>
+            <hr>
+            <p><i>Marked with TWO <span class="text-danger">**</span>:</i></p>
+            <p>MS3 ECU's need an <a href="MS3X_board.html">MS3X Card</a> added to give these features. (Spark drivers on the MS3X
+                                        Board are low level and need coils with built in ignitors)
+            </p>
+            <hr>
+            <p><i>Marked with THREE <span class="text-danger">***</span>:</i></p>
+            <p>See the <a href="#options_extra">
+                optional
+                extra's</a> as these need to be added during the build stage to work.</p>
+            <hr>
+            <p><i>Marked with FOUR <span class="text-danger">****</span>:</i></p>
+            <p>
+              The MS1 and MS2 has one VR/Hall input as standard. I can add another one to MS1 or MS2 depending on your engine's
+              requirments. MS3 with an MS3X card has 2 VR / Hall inputs.
+            </p>
+          </div>
+          <div id="feature" role="tabpanel" class="tab-pane">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Features:</th>
+                  <th>MS1</th>
+                  <th>MS2</th>
+                  <th>MS3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fuel Table Size</td>
+                  <td>12x12</td>
+                  <td>12x12 or 16x16</td>
+                  <td>16x16</td>
+                </tr>
+                <tr>
+                  <td>RPM Resolution</td>
+                  <td>100RPM</td>
+                  <td>1 RPM</td>
+                  <td>1 RPM</td>
+                </tr>
+                <tr>
+                  <td>Fuel Resolution</td>
+                  <td>100uS</td>
+                  <td class="bg-light">0.16uS <span class="text-danger">***</span></td>
+                  <td class="bg-light">0.16uS <span class="text-danger">***</span></td>
+                </tr>
+                <tr>
+                  <td>Spark Table Size</td>
+                  <td>12x12</td>
+                  <td>12x12</td>
+                  <td>16x16</td>
+                </tr>
+                <tr>
+                  <td>Advance Resolution</td>
+                  <td>0.3 deg</td>
+                  <td>0.1 deg</td>
+                  <td>0.1 deg</td>
+                </tr>
+                <tr>
+                  <td>Batch Fire</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Sequential Fuel Firing <span class="text-danger">*</span></td>
+                  <td>No</td>
+                  <td>Yes (Up to 4cy)</td>
+                  <td>Yes (Up to 8 cy)</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Semi-Sequential Fuel Firing <span class="text-danger">*</span></td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Sequential Ignition with Suitable Cam and Crank Inputs <span class="text-danger">*</span></td>
+                  <td>Yes (Up to 5cy)</td>
+                  <td>Yes (Up to 5cy)</td>
+                  <td>Yes (Up to 8cy)</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Distributor Based <span class="text-danger">*</span></td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Wasted Spark with Suitable Cam/Crank Signals <span class="text-danger">*</span></td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Coil On Plug (COP) with Suitable Cam/Crank Signals <span class="text-danger">*</span></td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Mapped Table for Individual Injector Trim</td>
+                  <td>No</td>
+                  <td>Up to 4 channels</td>
+                  <td>Up to 8 channels</td>
+                </tr>
+                <tr>
+                  <td>Mapped Table for Individual Spark Trim</td>
+                  <td>No</td>
+                  <td>No</td>
+                  <td>Up to 8 channels</td>
+                </tr>
+                <tr>
+                  <td>Mapped Table for Individual Injector Timing</td>
+                  <td>No</td>
+                  <td>Timed for start, middle and end of injection pulse</td>
+                  <td>Timed for start, middle and end of injection pulse</td>
+                </tr>
+                <tr>
+                  <td>Spark Dwell Control</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Boost Control <span class="text-danger">**</span></td>
+                  <td>Open Loop</td>
+                  <td>Open Loop and closed with PID</td>
+                  <td>Open Loop and closed with PID</td>
+                </tr>
+                <tr>
+                  <td>Barometric Correction Taken at Power on</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class="bg-light">Real Time Baro Correction <span class="text-danger">**</span></td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Test Mode for Fuel Pump, Injectors and Spark</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Rev Limiter</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Overrun Fuel Cut</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Staged Injection, Control 2 Banks of Injectors Seperately</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Acceleration Enrichment</td>
+                  <td>RPM, TPS, MAP based</td>
+                  <td>RPM, TPS, MAP based</td>
+                  <td>RPM, TPS, MAP based</td>
+                </tr>
+                <tr>
+                  <td>Enhanced Acceleration Enrichment - Wall Wetting</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>AFR Target Tables</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b>IMPORTANT NOTES:</b></p>
+            <p><i>Marked with ONE <span class="text-danger">*</span>:</i></p>
+            <p>
+              This is dependant on your engine setup and
+              how you want the ECU configured.
+            </p>
+            <hr>
+            <p><i>Marked with TWO <span class="text-danger">**</span>:</i></p>
+            <p>See the <a href="#options_extra">optional extra's</a>as these need
+              to be added to work.
+            </p>
+            <hr>
+            <p><i>Marked with THREE <span class="text-danger">***</span>:</i></p>
+            <p>
+              The fuel control resolution won't actually 
+              be down to this level due to <br>VE and req_fuel resolution. But the hardware is capable of this control.
+            </p>
+          </div>
+          <div id="setup" role="tabpanel" class="tab-pane">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Setups that can be Decoded as Standard:</th>
+                  <th>MS1</th>
+                  <th>MS2</th>
+                  <th>MS3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Distributor Based</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Ford TFI and EDIS</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>GM HEI and GMDIS</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Dual Distributor</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Neon 420</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Ford 36-1</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Bosch, GM, Vauxhall, BMW, etc. 60-2</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>36-1+1</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>36-2-2-2</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Subaru 6/7</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>IAW Weber- Marelli</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Mitsubushi 6g72</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>4/1 CAS</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>4G63 (Miata)</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>99-00 Miata</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Renix 44-2-2</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Twin Trigger (aka. Dual Spark)</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Suzuki Swift</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Suzuki Vitara</td>
+                  <td>No</td>
+                  <td>Yes (UNTESTED)</td>
+                  <td>Yes (UNTESTED)</td>
+                </tr>
+                <tr>
+                  <td>Daihatsu 3 cyl</td>
+                  <td>No</td>
+                  <td>Yes (UNPROVEN)</td>
+                  <td>Yes (UNPROVEN)</td>
+                </tr>
+                <tr>
+                  <td>Daihatsu 4cyl</td>
+                  <td>No</td>
+                  <td>Yes (UNTESTED)</td>
+                  <td>Yes (UNTESTED)</td>
+                </tr>
+                <tr>
+                  <td>Rover K Series 36-1-1</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Rover K Series 36-1-1-1-1</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Rover K Series 36-2-2</td>
+                  <td>No</td>
+                  <td>Yes (UNTESTED)</td>
+                  <td>Yes (UNTESTED)</td>
+                </tr>
+                <tr>
+                  <td>Honda VTR1000 12-3</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Chrysler 2.2/2.5</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>GM 7X Native</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Nissan 360 Tooth CAS</td>
+                  <td>No</td>
+                  <td>UNDER TESTING</td>
+                  <td>UNDER TESTING</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              Note that all the listed setups would need to 
+              have the ECU configured and built for them specifically, <br>this is what I do when I build them for you.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white wrapper m-t-xl m-b-xl">
+        <ul role="tablist" class="nav nav-pills nav-justified w-full">
+          <li role="presentation" class="active"><a href="#ms1" aria-controls="ms1" role="tab" data-toggle="tab">Hardware Compaisons</a></li>
+          <li role="presentation"><a href="#ms2" aria-controls="ms2" role="tab" data-toggle="tab">Hardware Compaisons</a></li>
+          <li role="presentation"><a href="#ms3" aria-controls="ms3" role="tab" data-toggle="tab">Hardware Compaisons</a></li>
+        </ul>
+        <div class="tab-content m-t-md">
+          <div id="ms1" role="tabpanel" class="tab-pane active">
+            <h3>MS1 Option Configuration:</h3>
+            <p>Two functions in the same row can NOT be used together! </p>
+            <p>e.g. NOS and Water Injection as they are not used in another pad, etc, </p>
+            <p>but NOS and Tacho could, as tacho can come from JS3.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <td><b>Pad</b></td>
+                  <td><b>Function A</b></td>
+                  <td><b>Function B</b></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b><font color="#000">JS0</font></b></td>
+                  <td><font color="#006666">Cooling Fan Relay</font></td>
+                  <td><font color="#9900FF">Water Injection Water Pump Relay</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS1</font></b></td>
+                  <td><font color="#990066">NOS Relay Output</font></td>
+                  <td><font color="#9900FF">Water Injection PWM Output Water Valve <span class="color-red">¡</span></font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS2</font></b></td>
+                  <td><font color="#FF00FF">Programmable Output 1</font></td>
+                  <td><font color="#666">Boost Controller PWM Output <span class="text-danger">¡</span></font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS3</font></b></td>
+                  <td><font color="#FF00FF">Programmable Output 2</font></td>
+                  <td><font color="#FF0000">Tacho Output</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS5</font></b></td>
+                  <td><font color="#0000CC">Constant Barometric Correction</font></td>
+                  <td><font color="#666">Second O2 sensor</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS7</font></b></td>
+                  <td><font color="#000">
+                      Spark E 
+                      (5 COP - 10 and over Wasted Spark setups)</font></td>
+                  <td><font color="#000">...</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS8</font></b></td>
+                  <td><font color="#333399">Second Trigger Input</font></td>
+                  <td><font color="#000000">...</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS9</font></b></td>
+                  <td><font color="#990066">NOS Input (To switch tables or Retard Ignition)</font></td>
+                  <td><font color="#00CC99">Switch VE and/or Ignition Map and/or Boost Target Tables</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS10</font></b></td>
+                  <td><font color="#000">
+                      Spark F 
+                       (12cy Wasted Spark setups)</font></td>
+                  <td><font color="#000">Knock Input</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">JS11</font></b></td>
+                  <td><font color="#0000FF">Launch Control input</font></td>
+                  <td><font color="#000">...</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">D14</font></b></td>
+                  <td><font color="#000">
+                      Spark A 
+                       (Used for vertually all Ignition setups)</font></td>
+                  <td><font color="#000">...</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">D15</font></b></td>
+                  <td><font color="#000">
+                      Spark C 
+                      (6cy and over Wasted Spark setups)</font></td>
+                  <td><font color="#FF00FF">Programmable Output 4 </font><font color="#006666">                        (Cooling Fan Relay)</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">D16</font></b></td>
+                  <td><font color="#000">
+                      Spark B 
+                      (4cy and over Wasted Spark setups)</font></td>
+                  <td><font color="#FF00FF">...</font></td>
+                </tr>
+                <tr>
+                  <td><b><font color="#000">R1</font></b></td>
+                  <td><font color="#000">
+                      Spark D 
+                      (8cy and over Wasted Spark setups)</font></td>
+                  <td><font color="#FF00FF">Programmable Output 3 (Timed Delay possible)</font></td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b><font color="#FF0000">¡</font></b> = NOT recommended to use these together.</p>
+            <p><b>Note:</b> Most outputs can be set for Tacho, ExtraEFI.co.uk uses JS3 if available.</p>
+          </div>
+          <div id="ms2" role="tabpanel" class="tab-pane">
+            <h3>MS2 and MS3 Option Configuration:</h3>
+            <p>Any function in the same row (A B C D E or F) can NOT be used together!</p>
+            <p>(e.g. if your using a Stepper Motor for idle you can NOT use NOS Control as it's not used in another pad, etc, </p>
+            <p>but Stepper Motor and Tacho could be used together as Tacho can come from JS11, or others.)</p>
+            <p>Note: For MS3 ECU's without an MS3X board you can have the same options as the table below.</p>
+            <p>If you go for an MS3X board then you will get <a href="MS3X_board.html">THESE </a>options all built-in, so you can ignore the table below.</p>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td height="21" width="6%">
+                    <div><font color="#000"><b>Pad</b></font></div>
+                  </td>
+                  <td height="21" width="20%">
+                    <div><font color="#000"><b>A</b></font></div>
+                  </td>
+                  <td height="21" width="13%">
+                    <div><font color="#000"><b>B</b></font></div>
+                  </td>
+                  <td height="21" width="13%">
+                    <div><font color="#000"><b>C</b></font></div>
+                  </td>
+                  <td height="21" width="13%">
+                    <div><font color="#000"><b>D</b></font></div>
+                  </td>
+                  <td height="21" width="18%">
+                    <div><font color="#000"><b>E</b><font></font></font></div>
+                  </td>
+                  <td height="21" width="17%">
+                    <div><font color="#000"><b>F</b></font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%" height="41">
+                    <div><b><font color="#000">JS0</font></b></div>
+                  </td>
+                  <td width="20%" height="41">
+                    <div><font color="#000">Stepper Motor (JS0 - JS3) <b>†</b></font></div>
+                  </td>
+                  <td width="13%" height="41">
+                    <div><font color="#FF00FF">Programmable Output</font></div>
+                  </td>
+                  <td width="13%" height="41">
+                    <div><font color="#FF0000">Tacho Output </font></div>
+                  </td>
+                  <td width="13%" height="41">
+                    <div><font color="#990066">NOS Relay Output (Stage 1)</font></div>
+                  </td>
+                  <td width="18%" height="41">
+                    <div><font color="#666666">Boost Control PWM Output</font></div>
+                  </td>
+                  <td width="17%" height="41">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%" height="2">
+                    <div><b><font color="#000">JS1</font></b></div>
+                  </td>
+                  <td width="20%" height="2">
+                    <div><font color="#000">Stepper Motor (JS0 - JS3) <b>†</b></font></div>
+                  </td>
+                  <td width="13%" height="2">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="13%" height="2">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="13%" height="2">
+                    <div><font color="#990066">...</font></div>
+                  </td>
+                  <td width="18%" height="2">
+                    <div><font color="#666">...</font></div>
+                  </td>
+                  <td width="17%" height="2">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%" height="11">
+                    <div><b><font color="#000">JS2</font></b></div>
+                  </td>
+                  <td width="20%" height="11">
+                    <div><font color="#000">Stepper Motor (JS0 - JS3) <b>†</b></font></div>
+                  </td>
+                  <td width="13%" height="11">
+                    <div><font color="#FF00FF">Programmable Output</font></div>
+                  </td>
+                  <td width="13%" height="11">
+                    <div><font color="#000"><font color="#FF0000">
+                          Tacho
+                          Output</font></font></div>
+                  </td>
+                  <td width="13%" height="11">
+                    <div><font color="#990066">NOS Relay Output (Stage 2)</font></div>
+                  </td>
+                  <td width="18%" height="11">
+                    <div><font color="#666">Boost Control PWM Output</font></div>
+                  </td>
+                  <td width="17%" height="11">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%">
+                    <div><b><font color="#000">JS3</font></b></div>
+                  </td>
+                  <td width="20%">
+                    <div><font color="#000">Stepper Motor (JS0 - JS3) <b>†</b></font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="18%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="17%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%" height="41">
+                    <div><b><font color="#000">JS4</font></b></div>
+                  </td>
+                  <td width="20%" height="41">
+                    <div><font color="#000099">Constant Barometric Correction</font></div>
+                  </td>
+                  <td width="13%" height="41">
+                    <div><font color="#330000">Knock Input</font></div>
+                  </td>
+                  <td width="13%" height="41">
+                    <div><font color="#0000FF">Launch Control Input</font></div>
+                  </td>
+                  <td width="13%" height="41">
+                    <div><font color="#666">Second O2 input</font></div>
+                  </td>
+                  <td width="18%" height="41">
+                    <div><font color="#990066">NOS Input</font></div>
+                  </td>
+                  <td width="17%" height="41">
+                    <div><font color="#333333" size="4"><b>Spark F<br><font size="2">(12cy Wasted Spark setups)</font></b></font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%">
+                    <div><b><font color="#000">JS5</font></b></div>
+                  </td>
+                  <td width="20%">
+                    <div><font color="#000099">Constant Barometric Correction</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#330000">Knock Input</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#0000FF">Launch Control Input</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#666666">Second O2 input</font></div>
+                  </td>
+                  <td width="18%">
+                    <div><font color="#990066">NOS Input</font></div>
+                  </td>
+                  <td width="17%">
+                    <div><font color="#333" size="4"><b>Spark E<br><font size="2">( >= 10cy Wasted Spark setups)</font></b></font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%" height="2">
+                    <div><b><font color="#000">JS7</font></b></div>
+                  </td>
+                  <td width="20%" height="2">
+                    <div><font color="#0000FF">...</font></div>
+                  </td>
+                  <td width="13%" height="2">
+                    <div>...</div>
+                  </td>
+                  <td width="13%" height="2">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="13%" height="2">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="18%" height="2">
+                    <div><font color="#990066">...</font></div>
+                  </td>
+                  <td width="17%" height="2">
+                    <div><font color="#00CC99">
+                        Switch VE and/or Ignition
+                        Map Tables</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%">
+                    <div><b><font color="#000">JS10</font></b></div>
+                  </td>
+                  <td width="20%">
+                    <div><font color="#333399">Second Trigger Input</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#0000FF">Launch Control Input </font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#FF0000">Tacho Output</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#000">EDIS SAW output</font></div>
+                  </td>
+                  <td width="18%">
+                    <div><font color="#990066">NOS Input</font></div>
+                  </td>
+                  <td width="17%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%" height="54">
+                    <div><b><font color="#000">JS11</font></b></div>
+                  </td>
+                  <td width="20%" height="54">
+                    <div><font color="#333" size="4"><b>Spark D <br><font size="2">(>=8cy wasted spark setups)</font></b></font></div>
+                  </td>
+                  <td width="13%" height="54">
+                    <div><font color="#0000FF">Launch Control Input</font></div>
+                  </td>
+                  <td width="13%" height="54">
+                    <div><font color="#FF0000">Tacho Output</font></div>
+                  </td>
+                  <td width="13%" height="54">
+                    <div><font color="#FF00FF">Programmable Output</font></div>
+                  </td>
+                  <td width="18%" height="54">
+                    <div><font color="#666">Boost Control PWM Output</font></div>
+                  </td>
+                  <td width="17%" height="54">
+                    <div><b><font color="#00CC99">...</font></b></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%">
+                    <div><b><font color="#000">D14</font></b></div>
+                  </td>
+                  <td width="20%">
+                    <div><font color="#333" size="4"><b>Spark A <br><font size="2">(Vertually all Igntion setups) except EDIS</font></b></font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#FF00FF">Programmable Output </font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#FF0000">Tacho Output</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="18%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="17%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%" height="6">
+                    <div><b><font color="#000">D15</font></b></div>
+                  </td>
+                  <td width="20%" height="6">
+                    <div><font color="#333" size="4"><b>Spark C <br><font size="2">( >= 6cy wasted spark setups) </font></b></font></div>
+                  </td>
+                  <td width="13%" height="6">
+                    <div><font color="#FF00FF">Programmable Output</font></div>
+                  </td>
+                  <td width="13%" height="6">
+                    <div><font color="#FF0000">Tacho Output</font></div>
+                  </td>
+                  <td width="13%" height="6">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="18%" height="6">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="17%" height="6">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%">
+                    <div><b><font color="#000">D16</font></b></div>
+                  </td>
+                  <td width="20%">
+                    <div><font color="#333" size="4"><b>Spark B <br><font size="2">( >= 4cy wasted spark setups)</font></b></font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#FF00FF">Programmable Output</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#FF0000">Tacho Output</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="18%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="17%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="6%">
+                    <div><b><font color="#000">FIdle</font></b></div>
+                  </td>
+                  <td width="20%">
+                    <div><font color="#000">PWM Idle Valve Control <i>
+                          (2
+                          or 3 wired valves)</i></font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#FF0000">Tacho output</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#FF00FF">Programmable Output</font></div>
+                  </td>
+                  <td width="13%">
+                    <div><font color="#666">Boost Control PWM Output</font></div>
+                  </td>
+                  <td width="18%">
+                    <div><font color="#000">...</font></div>
+                  </td>
+                  <td width="17%">
+                    <div><font color="#000"></font></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p><font color="#000000">
+                † All 4 (JS0-JS3) 
+                pads are used for the stepper motor if selected!<br><b>Note:</b> Most outputs can be set for Tacho, ExtraEFI.co.uk uses
+                                    JS11 if available.</font></p>
+          </div>
+          <div id="ms3" role="tabpanel" class="tab-pane">
+            <p>Description of Options:<br><span>(Note: When using the <a href="MS3X_board.html">MS3X board</a> on an MS3 ECU, many of these options are
+                                              already included, so ignore the individual cost.)</span></p>
+            <hr>
+            <h2>NOS - Nitrous Control</h2>
+            <p>
+              An output to drive a relay coil that's triggered by a minimum RPM, TPS, etc. It also uses an input that switches to a new timing map 
+              or fixed ignition retard. Can be used as an Anti-Lag for turbo applications too. Buffered, flywheel protection circuit <b>+ £12</b>.<b>Note:</b> This is counted as 2 options, 1 for the input, 1 for the output so only 2 more can be added. Click <a href="Drawings/PDF_Files/NOS_MS1.pdf" target="_blank">here</a> for more details.
+            </p>
+            <hr>
+            <h2> NOS - Nitrous Control for <i>MS2-Extra Only</i></h2>
+            <p>
+              Up to 2 outputs to drive a dual stage or single stage NOS setup that's triggered by a minimum RPM, TPS, etc. It also uses an input that 
+              switches to a new timing map or fixed ignition retard. 2 x buffered, flywheel protection circuit <b>+ £15</b> for 2 outputs or <b>+ £12 </b>for 1 output. <b>Note:</b> This is counted as 2 or 3 options, 1 for the input, 1 or 2 for the outputs. Click <a href="Drawings/PDF_Files/NOS_MS2.pdf" target="_blank">here</a> for more details.
+            </p>
+            <hr>
+            <h2>Switchable Map Tables for Fuel or Spark or Boost or any Combination </h2>
+            <p>Switches between 2 maps e.g. LPG and Petrol, etc. Buffered and protected circuit <b>+ £5</b>. Click <a href="Drawings/PDF_Files/SwitchableMaps.pdf" target="_blank">here</a> for more details.</p>
+            <hr>
+            <h2>Boost Control</h2>
+            <p>Target values for boost levels depending on TPS and RPM, controlling the turbo's waste gate high powered FET driver <b>
+                + £10
+                †</b>. Click <a href="Drawings/PDF_Files/Boost_MS1.pdf" target="_blank">here</a> for more details.</p>
+            <hr>
+            <h2>38PSI of Boost (400KPa) Manifold Pressure Sensor</h2>
+            <p>
+              The standard MAP sensor is capable of detecting 21PSI of boost, in some rare cases 
+              this may not be enough, so a 38PSI (400KPa) sensor can be fitted<b> + £55</b>. Click <a href="Drawings/PDF_Files/400KPa_Setup.pdf" target="_blank">here</a> for more details. <b>Note:</b> (This is not part of the MS3X board, so will need adding to the order.)
+            </p>
+            <hr>
+            <h2> Water Injection Control <i>for MS1-Extra and MS3 Only</i></h2>
+            <p>
+              Pulsed water injection output to give a proportional water ratio using a fast acting valve and a water pump relay 
+              output high powered FET driver for the valve and a buffered, flywheel protection circuit for the control relay <b> + £15</b>.
+                                          For water pump relay control ONLY, buffered, flywheel protection circuit <b> + £5</b>. Click <a href="Drawings/PDF_Files/Water_Injection.pdf" target="_blank">here</a> for more details.
+            </p>
+            <hr>
+            <h2>Dual EGO Sensor Support</h2>
+            <p>Filter components for a 2nd separate Lambda sensor, 1 for each bank of a V6 or V8<b> + £5</b>.</p>
+            <hr>
+            <h2>Shift / Warning Light</h2>
+            <p>
+              I can add a single output that can be switched by several sources e.g. Air temp, RPM, coolant buffered, current limited circuit 
+              ready to directly connect to an LED <b> + £5</b>. Includes a red LED. Please remind me though, as 
+                                              I tend to forget to include it from time to time. Click <a href="Drawings/PDF_Files/warning_LED.pdf" target="_blank">here</a> for more
+                                              details.
+            </p>
+            <hr>
+            <h2>Launch Control / Flat Shift</h2>
+            <p>Limit RPM during takeoff/shifting to get a better 1/4 mile time, buffered and protected circuit<b> + £8</b>. Click <a href="Drawings/PDF_Files/Launch.pdf" target="_blank">here</a> for more details.</p>
+            <hr>
+            <h2>Real-Time (Constant) Barometric Correction</h2>
+            <p>
+              Really only suitable for hill climbers or mountain dwellers, includes filtering circuit and a second MAP sensor fitted internal 
+              to detect atmospheric pressure<b> + £25</b>. (This is not part of the MS3X board, so will need adding to the order.)
+            </p>
+            <hr>
+            <h2>Cooling Fan Programmable Output</h2>
+            <p>
+              An output that controls a relay for your cooling fan. This has a programmable ON temperature and a programmable OFF 
+              temperature built-in flywheel protection, buffered circuit<b> + £5</b>. Click <a href="Drawings/PDF_Files/coolingfan.pdf">here</a>                            for more details.
+            </p>
+            <hr>
+            <h2>Up to 4 Programmable Outputs</h2>
+            <p>A driver to control a relay built-in flywheel protection, buffered circuit <b> + £5</b><i> EACH</i>. Click <a href="Drawings/PDF_Files/Program_Outputs.pdf" target="_blank">here</a> for more details.</p>
+            <hr>
+            <h2>Knock Sensor Input</h2>
+            <p>Connection wiring only!! This needs a pre-built knock circuit, click <a href="software/knock.pdf" target="_blank">here</a> for more 
+                                          details. <b>FREE</b> internally wired only!
+            </p>
+            <hr>
+            <h2> Tacho Output for Coil Pack Use</h2>
+            <p>(To feed various Rev Counters high voltage output transistor circuit <b> + £5) ǂ </b></p>
+            <hr>
+            <h2>Dual Wheel Decoder/2nd Trigger Input</h2>
+            <p>For a second hall sensor input opto protected circuit with hall conditioning<b> + £15</b>. <br>For a second VR sensor input<i> including separate VR conditioning circuit </i><b> + £35</b>.</p>
+            <hr>
+            <p>Up to 4 additional items like, launch, programme outputs, knock, etc.<br>can be added to a standard MS ECU.<br><br>                          The <a href="MS3X_board.html">MS3X Board</a> has more options built-in.<br>For more info on these functions <a href="mailto:phil@extraefi.co.uk?subject=MS Additional Functions Question">please contact me</a>.</p>
+            <p><b>†</b> - This code is experimental although some people have had some considerable success with the system.<br><b>ǂ</b> - These options work for most installs, but as there are so many variants of rev counter it is impossible to say it will work on all setups. You may need to add a few components externally, but full details are supplied in the drawings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="bg-white m-t-xl wrapper m-b-xl">
+        <p class="m-none">Copyright &copy; <a href="#">ExtraEFI.co.uk          |  2015 </a><span class="pull-right"><a href="terms_of_use.html">Terms of Use</a> - Design by Sam Buckingham &amp; Joshua Baldwin</span></p>
+      </footer>
+    </div>
+    <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+    <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="/assets/js/bootstrap-image-gallery.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+    <script src="/assets/js/SpryCollapsiblePanel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var total=19;
+        for(var number=1; number<total; number++) {
+          console.log('CollapsiblePanel' + number);
+          eval('var CollapsiblePanel' + number +  ' = new Spry.Widget.CollapsiblePanel("CollapsiblePanel' + number + '", {contentIsOpen:false});');
+        }
+      });
+    </script>
+  </body>
+</html>
